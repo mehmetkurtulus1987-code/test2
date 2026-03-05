@@ -1,0 +1,481 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.site-logo {
+    height: 45px;
+    width: auto;
+    transition: 0.3s ease;
+}
+
+/* 1. Üst Bilgi Çubuğu (Top Bar) */
+.top-bar {
+    background: #f8f9fa;
+    color: #333;
+    padding: 10px 0;
+    font-size: 13px;
+    border-bottom: 1px solid #ddd;
+}
+
+    .top-bar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+.contact-info a, .contact-info span {
+    margin-right: 15px;
+    color: #555;
+}
+
+.whatsapp-link {
+    color: #25d366;
+    font-weight: bold;
+}
+
+/* 2. Yapışkan Header (Sticky Header) */
+.main-header {
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky; /* Sayfayı kaydırınca tepeye yapışır */
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    color: #e74c3c; /* Servis rengi kırmızı/mavi tonları iyidir */
+}
+
+.nav-menu {
+    display: flex;
+}
+
+    .nav-menu li a {
+        padding: 10px 15px;
+        color: #333;
+        font-weight: 500;
+    }
+
+        .nav-menu li a:hover {
+            color: #e74c3c;
+        }
+
+/* 3. Hero Bölümü Tasarımı */
+.hero {
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('kombi-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+/* --- Marka Logoları --- */
+.brands, .brands-urunlerimiz {
+    background: #ffffff;
+    padding: 5px 0;
+    margin-top: 85px;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.brand-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+    .brand-logos img {
+        height: 20px;
+        width: auto;
+        transition: 0.4s ease;
+        display: block;
+        object-fit: contain;
+    }
+
+        .brand-logos img:hover {
+            transform: translateY(-5px);
+            opacity: 1;
+        }
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+}
+
+.btn-call {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn-wa {
+    background: #25d366;
+    color: white;
+}
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #eee;
+}
+
+    .service-card:hover {
+        background: #fff;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        transform: translateY(-5px);
+    }
+
+    .service-card i {
+        font-size: 40px;
+        color: #e74c3c;
+        margin-bottom: 15px;
+    }
+/* Arıza Kodları */
+.error-codes {
+    background: #f4f4f4;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.brand-selection {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.brand-btn {
+    background: #fff;
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+    .brand-btn:hover {
+        background: #e74c3c;
+        color: #fff;
+    }
+
+/* Servis Süreci */
+.process {
+    padding: 80px 0;
+}
+
+.process-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.process-step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: #2c3e50;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.process-step h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+.google-reviews {
+    background: #fff;
+    padding: 80px 0;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.review-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    position: relative;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+    .review-header img:not(.g-icon) {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .review-header h4 {
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+
+.stars {
+    color: #fbbc05; /* Google yıldız sarısı */
+    font-size: 14px;
+}
+
+.g-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.review-card p {
+    color: #555;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.review-date {
+    font-size: 12px;
+    color: #999;
+}
+
+.all-reviews-link {
+    text-align: center;
+    margin-top: 40px;
+}
+
+    .all-reviews-link a {
+        color: #4285f4;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+.service-areas {
+    background: #fdfdfd;
+    padding: 70px 0;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.area-item {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+    .area-item i {
+        color: #e74c3c;
+        font-size: 18px;
+    }
+
+    .area-item span {
+        font-weight: 600;
+        color: #333;
+        font-size: 16px;
+    }
+
+    .area-item:hover {
+        border-color: #e74c3c;
+        background: #fff5f4;
+        transform: scale(1.03);
+        box-shadow: 0 5px 15px rgba(231, 76, 60, 0.1);
+    }
+
+.area-notice {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+    font-size: 14px;
+}
+/* --- Footer Stilleri --- */
+.main-footer {
+    background: #2c3e50; /* Koyu lacivert kurumsal durur */
+    color: #ecf0f1;
+    padding: 60px 0 0 0;
+    margin-top: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-logo strong { color: #e74c3c; }
+
+.footer-col p {
+    line-height: 1.6;
+    font-size: 14px;
+    color: #bdc3c7;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #e74c3c;
+}
+
+.footer-col ul li { margin-bottom: 12px; }
+
+.footer-col ul li a {
+    color: #bdc3c7;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #e74c3c;
+    padding-left: 5px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.contact-item i { color: #e74c3c; font-size: 16px; }
+
+.footer-social { margin-top: 20px; display: flex; gap: 15px; }
+
+.footer-social a {
+    width: 35px;
+    height: 35px;
+    background: #34495e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.footer-social a:hover { background: #e74c3c; }
+
+.footer-bottom {
+    background: #1a252f;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 13px;
+    border-top: 1px solid #3e4f5f;
+}
+
+/* Mobil Uyum */
+@media (max-width: 768px) {
+    .top-bar {
+        display: none;
+    }
+    /* Mobilde üst barı gizleyip alanı açmak daha iyidir */
+    .nav-menu {
+        display: none;
+    }
+}

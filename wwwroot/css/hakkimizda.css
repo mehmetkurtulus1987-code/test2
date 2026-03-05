@@ -1,0 +1,288 @@
+/*Header Logo Tasarımı*/
+.logo a {
+    display: flex;
+    align-items: center; /* Resim ve yazıyı dikeyde ortalar */
+    gap: 12px; /* Resim ile yazı arasındaki boşluk */
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+/* Logo içindeki resim (webp) */
+.logo img {
+    height: 50px; /* Logonun yüksekliğini buradan ayarlayabilirsin */
+    width: auto;
+    object-fit: contain;
+    /* Hafif bir gölge logoyu öne çıkarır */
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+/* Logo içindeki metin yapısı */
+.logo a strong {
+    font-size: 24px;
+    font-weight: 800;
+    color: #2c3e50; /* Koyu gri/mavi tonu */
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+}
+
+/* "TEKNİK" yazısı için (Eğer strong dışında kalıyorsa) */
+.logo a {
+    font-size: 24px;
+    color: #e74c3c; /* Teknik kelimesini kırmızı yaparak vurgular */
+    font-weight: 400;
+}
+
+    /* Logo Hover (Üzerine gelince) Efekti */
+    .logo a:hover {
+        transform: scale(1.02); /* Çok hafif büyüme */
+    }
+
+        .logo a:hover img {
+            filter: drop-shadow(0 4px 8px rgba(231, 76, 60, 0.3)); /* Kırmızımsı hafif parlama */
+        }
+/* Hakkımızda Sayfası - Modern Zigzag & Kart Tasarımı */
+
+.about-zigzag-section {
+    padding: 100px 0;
+    background: #f8f9fa; /* Hafif gri arka plan beyaz kutuları patlatır */
+}
+
+/* Genel Zigzag Yapısı */
+.zigzag-item {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 120px;
+}
+
+    .zigzag-item.alt {
+        flex-direction: row-reverse;
+    }
+
+/* --- Yazı Kartı --- */
+.zigzag-content {
+    flex: 1.5;
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+    border: 1px solid #edf2f7;
+    transition: all 0.3s ease;
+}
+
+    .zigzag-content:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    }
+
+    .zigzag-content .year-label {
+        display: inline-block;
+        background: #ffe9e7;
+        color: #e74c3c;
+        padding: 5px 15px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 13px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+
+    .zigzag-content h3 {
+        font-size: 30px;
+        color: #2c3e50;
+        margin-bottom: 20px;
+        font-weight: 800;
+    }
+
+    .zigzag-content p {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #636e72;
+        margin-bottom: 25px;
+    }
+
+/* İçerik altındaki ikonlu özellikler */
+.about-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-top: 25px;
+    border-top: 1px solid #f1f1f1;
+}
+
+.f-item {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    .f-item i {
+        color: #e74c3c;
+        font-size: 18px;
+    }
+
+/* --- Resim Alanı Düzeni --- */
+.zigzag-image-wrapper {
+    flex: 1;
+    position: relative;
+}
+
+.zigzag-image-box {
+    width: 90%; /* Biraz genişletildi */
+    height: 350px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+    .zigzag-image-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill; /* fill yerine cover daha profesyonel durur, resmi bozmaz */
+    }
+
+/* Resim Arkasındaki Dekoratif Kutu */
+.image-deco-block {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: #e74c3c;
+    border-radius: 25px;
+    top: 25px;
+    right: 0;
+    z-index: 1;
+    opacity: 0.1;
+}
+
+.zigzag-item.alt .image-deco-block {
+    right: auto;
+    left: 0;
+}
+
+/* --- İstatistik Sayacı Bölümü --- */
+.stats-bar {
+    background: #2c3e50;
+    padding: 80px 0;
+    color: white;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-card .stat-number {
+    display: block;
+    font-size: 48px;
+    font-weight: 800;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.stat-card .stat-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #bdc3c7;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* --- Marka Logoları Bandı --- */
+.brand-strip {
+    padding: 80px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.brand-title {
+    font-size: 16px;
+    color: #e74c3c;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.brand-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+    .brand-logos img {
+        height: 30px;
+        width: auto;
+        filter: none;
+        opacity: 0.5;
+        transition: all 0.4s ease;
+    }
+
+        .brand-logos img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+/* --- Mobil Uyumluluk --- */
+@media (max-width: 992px) {
+    .zigzag-item, .zigzag-item.alt {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+
+    .zigzag-content {
+        padding: 30px;
+        width: 100%;
+    }
+
+    .zigzag-image-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .zigzag-image-box {
+        width: 100%;
+        height: 280px;
+    }
+
+    .image-deco-block {
+        display: none; /* Mobilde karmaşayı önlemek için deco'yu gizledik */
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-bar {
+        padding: 50px 0;
+    }
+
+    .stat-card .stat-number {
+        font-size: 36px;
+    }
+
+    .brand-logos {
+        gap: 30px;
+    }
+
+        .brand-logos img {
+            height: 30px;
+        }
+    .logo img {
+        height: 40px; /* Mobilde logoyu biraz küçültelim */
+    }
+
+    .logo a strong,
+    .logo a {
+        font-size: 20px; /* Mobilde yazı boyutu */
+    }
+}
