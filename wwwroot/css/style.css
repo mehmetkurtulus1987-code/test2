@@ -377,7 +377,7 @@ ul {
     color: #777;
     font-size: 14px;
 }
-.area-btns {
+.area .btn btn-call {
     text-align: center;
     background: #fff;
     border: 2px solid #e74c3c;
@@ -386,6 +386,10 @@ ul {
     border-radius: 30px;
     font-weight: bold;
 }
+.area .btn btn-call:hover {
+        background: #e74c3c;
+        color: #fff;
+    }
     
 /* --- Footer Stilleri --- */
 .main-footer {
