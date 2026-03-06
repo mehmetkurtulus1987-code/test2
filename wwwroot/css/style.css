@@ -383,19 +383,33 @@ ul {
     color: #777;
     font-size: 14px;
 }
-.area-btns .btn btn-call {
-    text-align: center;
-    background: #fff;
-    border: 2px solid #e74c3c;
-    color: #e74c3c;
-    padding: 12px 25px;
-    border-radius: 30px;
-    font-weight: bold;
+.area-btns {
+    display: flex;
+    justify-content: center; /* Butonu yatayda tam ortalar */
+    margin-bottom: 40px;     /* Alttaki içerikten ayırır */
 }
-.area-btns .btn btn-call:hover {
-        background: #e74c3c;
-        color: #fff;
-    }
+
+/* Sadece bu alandaki butona özel stil */
+.area-btns .btn-call {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25d366; /* Yeşil (Güven veren arama rengi) */
+    color: white !important;
+    padding: 15px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;      /* Tam yuvarlak köşeler */
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Butonun üzerine gelindiğinde (Hover) */
+.area-btns .btn-call:hover {
+    transform: translateY(-3px); /* Hafif yukarı kalkma efekti */
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+    background-color: #1ebc5a;
+}
     
 /* --- Footer Stilleri --- */
 .main-footer {
