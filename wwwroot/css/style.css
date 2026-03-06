@@ -163,6 +163,12 @@ ul {
     background: #25d366;
     color: white;
 }
+.btn-cal .btn-wa:hover {
+    background-color: white;
+    color: #25d366;
+    transform: translateY(-3px); /* Hafif yukarı zıplama efekti */
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
 .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -377,7 +383,7 @@ ul {
     color: #777;
     font-size: 14px;
 }
-.area .btn btn-call {
+.area-btns .btn btn-call {
     text-align: center;
     background: #fff;
     border: 2px solid #e74c3c;
@@ -386,7 +392,7 @@ ul {
     border-radius: 30px;
     font-weight: bold;
 }
-.area .btn btn-call:hover {
+.area-btns .btn btn-call:hover {
         background: #e74c3c;
         color: #fff;
     }
