@@ -20,36 +20,55 @@ a {
 ul {
     list-style: none;
 }
+
 .logo {
-    font-size: 22px;     
-    letter-spacing: 1px; 
-    color: #FF0000;         
-}
-.logo strong {
-    color: #FF0000;      
-    font-weight: 800;
-}
-.logo a:hover img {
-    transform: scale(1.05); 
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #FF0000;
 }
 
-.logo a:hover {
-    opacity: 0.9;
-}
+    .logo strong {
+        color: #FF0000;
+        font-weight: 800;
+    }
+
+    .logo a:hover img {
+        transform: scale(1.05);
+    }
+
+    .logo a:hover {
+        opacity: 0.9;
+    }
 
 .site-logo {
     height: 45px;
     width: auto;
     transition: 0.3s ease;
 }
+.page-urunler {
+    padding-top: 50px; /* Header altında boşluk bırakır */
+    background-color: #f4f4f4; /* Hafif gri bir zemin ürünleri öne çıkarır */
+}
+
+.product-group {
+    padding: 60px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
 
 /* 1. Üst Bilgi Çubuğu (Top Bar) */
 .top-bar {
-    background: #f8f9fa;
-    color: #333;
+    background: #2c3e50; /* Koyu gri/lacivert yapıldı (Footer ile uyumlu) */
+    color: #ffffff; /* Genel yazı rengi beyaz yapıldı */
     padding: 10px 0;
     font-size: 13px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #3e4f5f; /* Alt çizgi biraz daha koyu yapıldı */
 }
 
     .top-bar .container {
@@ -60,11 +79,14 @@ ul {
 
 .contact-info a, .contact-info span {
     margin-right: 15px;
-    color: #555;
+    color: #ffffff; /* Linkler ve metinler beyaz yapıldı */
 }
+    .contact-info a:hover {
+        color: #FF0000; /* Üzerine gelince ikonlar gibi kırmızı olsun */
+    }
 
 .whatsapp-link {
-    color: #25d366;
+    color: #ffffff; /* WhatsApp linki de koyu gri yerine beyaz yapıldı */
     font-weight: bold;
 }
 
@@ -73,7 +95,7 @@ ul {
     background: #fff;
     padding: 20px 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    position: sticky; /* Sayfayı kaydırınca tepeye yapışır */
+    position: sticky;
     top: 0;
     z-index: 1000;
 }
@@ -86,16 +108,16 @@ ul {
 
 .logo a {
     display: flex;
-    align-items: center; 
-    gap: 12px;           
+    align-items: center;
+    gap: 12px;
     text-decoration: none;
     transition: 0.3s;
 }
 
 
 .logo img {
-    height: 50px;        
-    width: auto;        
+    height: 50px;
+    width: auto;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
@@ -111,7 +133,7 @@ ul {
     }
 
         .nav-menu li a:hover {
-            color: #e74c3c;
+            color: #2c3e50; /* Hover turuncu yerine koyu gri yapıldı */
         }
 
 /* 3. Hero Bölümü Tasarımı */
@@ -177,21 +199,23 @@ ul {
 }
 
 .btn-call {
-    background: #e74c3c;
+    background: #FF0000;
     color: white;
 }
 
 .btn-wa {
-    background: #25d366;
+    background: #2c3e50; /* Turuncu/Yeşil yerine koyu gri */
     color: white;
 }
+
 .btn-cal .btn-wa:hover {
     background-color: white;
-    color: #25d366;
-    transform: translateY(-3px); /* Hafif yukarı zıplama efekti */
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
-    background-color: #1ebc5a;
+    color: #2c3e50;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(44, 62, 80, 0.5);
+    background-color: #34495e;
 }
+
 .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -216,7 +240,7 @@ ul {
 
     .service-card i {
         font-size: 40px;
-        color: #e74c3c;
+        color: #FF0000;
         margin-bottom: 15px;
     }
 /* Arıza Kodları */
@@ -236,15 +260,15 @@ ul {
 
 .brand-btn {
     background: #fff;
-    border: 2px solid #e74c3c;
-    color: #e74c3c;
+    border: 2px solid #FF0000;
+    color: #FF0000;
     padding: 12px 25px;
     border-radius: 30px;
     font-weight: bold;
 }
 
     .brand-btn:hover {
-        background: #e74c3c;
+        background: #FF0000;
         color: #fff;
     }
 
@@ -282,6 +306,7 @@ ul {
     margin-bottom: 10px;
     color: #333;
 }
+
 .google-reviews {
     background: #fff;
     padding: 80px 0;
@@ -324,7 +349,7 @@ ul {
     }
 
 .stars {
-    color: #fbbc05; /* Google yıldız sarısı */
+    color: #fbbc05;
     font-size: 14px;
 }
 
@@ -358,6 +383,7 @@ ul {
         font-weight: 600;
         text-decoration: underline;
     }
+
 .service-areas {
     background: #fdfdfd;
     padding: 70px 0;
@@ -371,6 +397,7 @@ ul {
 }
 
 .area-item {
+    position: relative;
     background: #fff;
     border: 1px solid #eee;
     padding: 20px;
@@ -380,10 +407,12 @@ ul {
     gap: 12px;
     transition: 0.3s ease;
     cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
 }
 
     .area-item i {
-        color: #e74c3c;
+        color: #FF0000;
         font-size: 18px;
     }
 
@@ -393,12 +422,31 @@ ul {
         font-size: 16px;
     }
 
-    .area-item:hover {
-        border-color: #e74c3c;
-        background: #fff5f4;
-        transform: scale(1.03);
-        box-shadow: 0 5px 15px rgba(231, 76, 60, 0.1);
+    .area-item::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: #2c3e50; /* Koyu gri dolgu */
+        transition: left 0.5s ease;
+        z-index: -1;
     }
+
+    .area-item:hover {
+        border-color: #FF0000;
+        background: #fff; /* Arka plan beyaz kalır, before dolgusu gelir */
+        transform: scale(1.03);
+    }
+
+        .area-item:hover::before {
+            left: 0;
+        }
+
+        .area-item:hover i, .area-item:hover span {
+            color: #fff; /* Dolgu gelince yazı beyaz olsun */
+        }
 
 .area-notice {
     text-align: center;
@@ -406,37 +454,539 @@ ul {
     color: #777;
     font-size: 14px;
 }
+
 .area-btns {
     display: flex;
-    justify-content: center; 
-    margin-bottom: 40px;     
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
-/* Sadece bu alandaki butona özel stil */
-.area-btns .btn-call {
-    display: inline-flex;
+    .area-btns .btn-call {
+        display: inline-flex;
+        align-items: center;
+        background-color: #FF0000;
+        color: white !important;
+        padding: 15px 35px;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+        box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+        transition: all 0.3s ease;
+    }
+
+        .area-btns .btn-call:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            background-color: #2c3e50;
+        }
+
+/* --- Hakkımızda Sayfası Genel Yapı --- */
+.about-zigzag-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+/* --- Başlık Alanı (Header Stamp) --- */
+.header-stamp .since {
+    display: inline-block;
+    background: #2c3e50;
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.header-stamp h1 {
+    font-size: 38px;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.header-stamp .subtitle {
+    font-size: 18px;
+    color: #666;
+}
+
+/* --- Zigzag Düzeni (Görsel ve Metin Dengesi) --- */
+.zigzag-item {
+    display: flex;
     align-items: center;
-    background-color: #F56B51; 
-    color: white !important;
-    padding: 15px 35px;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 50px;      
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-    transition: all 0.3s ease;
+    gap: 100px; /* Metin ve resim arasındaki boşluk */
+    margin-bottom: 120px;
 }
 
-/* Butonun üzerine gelindiğinde (Hover) */
-.area-btns .btn-call:hover {
-    transform: translateY(-3px); /* Hafif yukarı kalkma efekti */
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
-    background-color: #1ebc5a;
+    .zigzag-item.alt {
+        flex-direction: row-reverse;
+    }
+
+.zigzag-content {
+    flex: 1.4; /* Metne daha fazla alan ayırır */
 }
-    
+
+.year-label {
+    display: block;
+    color: #FF0000;
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.zigzag-content h3 {
+    font-size: 30px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.zigzag-content p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+/* --- Özellik İkonları --- */
+.about-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.f-item {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    .f-item i {
+        color: #daa520;
+    }
+
+.zigzag-image-wrapper {
+    flex: 0.5; /* Resim alanını daraltır */
+    position: relative;
+    max-width: 350px; /* Resmin çok büyümesini engeller */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.zigzag-image-box {
+    position: relative;
+    z-index: 2;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+    .zigzag-image-box img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.5s ease;
+    }
+
+    .zigzag-image-box:hover img {
+        transform: scale(1.05);
+    }
+
+/* Dekoratif Bloklar */
+.image-deco-block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #f4f4f4;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+    .image-deco-block.red {
+        background: #FF0000;
+        opacity: 0.1;
+    }
+
+/* --- İstatistik Barı --- */
+.stats-bar {
+    background: #2c3e50;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.stat-card {
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+    .stat-card:last-child {
+        border-right: none;
+    }
+
+.stat-number {
+    display: block;
+    font-size: 42px;
+    font-weight: 800;
+    color: #FF0000;
+    margin-bottom: 5px;
+}
+
+.stat-text {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+/* --- Marka Strip --- */
+.brand-strip {
+    padding: 45px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.brand-title {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/*Hizmetler Sayfası*/
+/* Sayfa Başlığı (Hero) */
+.inner-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('../../img/hero-bg.jpg');
+    background-size: cover;
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+}
+
+    .inner-hero .highlight {
+        color: #c0392b;
+    }
+
+/* Hizmet Satırları */
+.detailed-services {
+    padding: 60px 0;
+    background: #fdfdfd;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+    .service-item.reverse {
+        flex-direction: row-reverse;
+    }
+
+.service-img {
+    flex: 1;
+    background: #fff;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+    .service-img i {
+        font-size: 100px;
+        color: #c0392b;
+    }
+
+.service-desc {
+    flex: 1.5;
+}
+
+    .service-desc h3 {
+        font-size: 28px;
+        color: #2c3e50;
+        margin-bottom: 15px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+        .service-desc h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            background: #c0392b;
+        }
+
+    .service-desc p {
+        line-height: 1.8;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    .service-desc ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+        .service-desc ul li {
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: #333;
+        }
+
+            .service-desc ul li i {
+                color: #27ae60;
+                margin-right: 10px;
+            }
+
+/* Butonlar */
+.service-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #c0392b;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+    .service-btn:hover {
+        background: #2c3e50;
+    }
+
+.wa-btn {
+    background: #25d366;
+}
+
+    .wa-btn:hover {
+        background: #128c7e;
+    }
+.services-faq {
+    padding: 60px 0;
+    background: #fff;
+}
+.services-faq .section-title {
+        text-align: center;
+        font-size: 28px;
+        color: #2c3e50;
+        margin-bottom: 20px;
+        margin-top: 5px;
+}
+
+.faq-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+    .faq-item h4 {
+        color: #2c3e50;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .faq-item p {
+        color: #666;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+.savings-banner {
+    background: #27ae60;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 20px;
+    margin: 40px 0;
+}
+
+.savings-content i {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.savings-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.savings-btn {
+    background: #fff;
+    color: #27ae60;
+    border: none;
+}
+/*URUNLER SAYFASI*/
+/* urunler.css - Menemen Teknik Ürünler Sayfası Özel Stilleri */
+
+:root {
+    --primary-red: #c0392b; /* Ana vurgu rengin */
+    --dark-navy: #2c3e50; /* Başlıklar ve metinler için */
+    --light-gray: #f9f9f9; /* Arka planlar için */
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+}
+
+/* Ana Konteyner Ayarı */
+.page-urunler {
+    padding-top: 40px;
+    background-color: var(--light-gray);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Bölüm Başlıkları ve Alt Metinler */
+.product-group {
+    padding: 60px 0;
+    border-bottom: 1px dotted #ddd;
+}
+
+    .product-group:last-child {
+        border-bottom: none;
+    }
+
+.section-title {
+    color: var(--dark-navy);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* Ürün Grid Yapısı (Yan yana dizilim) */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+/* Ürün Kartı Tasarımı */
+.product-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: var(--transition);
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+    .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+/* Ürün Görseli */
+.product-image {
+    width: 100%;
+    height: 250px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+    .product-image img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        transition: var(--transition);
+    }
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+/* Ürün Bilgileri */
+.product-info {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+    .product-info h3 {
+        color: var(--dark-navy);
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+        border-left: 4px solid var(--primary-red);
+        padding-left: 10px;
+    }
+
+.product-specs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .product-specs li {
+        font-size: 0.95rem;
+        color: #555;
+        margin-bottom: 8px;
+        line-height: 1.4;
+    }
+
+/* Teknik Detay Butonu */
+.tech-link-item {
+    margin-top: auto;
+    padding-top: 15px;
+}
+
+    .tech-link-item hr {
+        border: 0;
+        border-top: 1px solid #eee;
+        margin-bottom: 15px;
+    }
+
+.tech-btn {
+    display: inline-block;
+    color: var(--primary-red);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+    .tech-btn:hover {
+        color: var(--dark-navy);
+        padding-left: 5px;
+    }
+
 /* --- Footer Stilleri --- */
 .main-footer {
-    background: #2c3e50; /* Koyu lacivert kurumsal durur */
+    background: #2c3e50;
     color: #ecf0f1;
     padding: 60px 0 0 0;
     margin-top: 50px;
@@ -452,10 +1002,12 @@ ul {
 .footer-logo {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #FFF;
 }
 
-.footer-logo strong { color: #FF0000; }
+    .footer-logo strong {
+        color: #FFF;
+    }
 
 .footer-col p {
     line-height: 1.6;
@@ -470,27 +1022,29 @@ ul {
     padding-bottom: 10px;
 }
 
-.footer-col h4::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 50px;
-    height: 2px;
-    background: #e74c3c;
+    .footer-col h4::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50px;
+        height: 2px;
+        background: #FF0000; /* Turuncu çizgi kırmızı oldu */
+    }
+
+.footer-col ul li {
+    margin-bottom: 12px;
 }
 
-.footer-col ul li { margin-bottom: 12px; }
+    .footer-col ul li a {
+        color: #bdc3c7;
+        transition: 0.3s;
+    }
 
-.footer-col ul li a {
-    color: #bdc3c7;
-    transition: 0.3s;
-}
-
-.footer-col ul li a:hover {
-    color: #e74c3c;
-    padding-left: 5px;
-}
+        .footer-col ul li a:hover {
+            color: #FF0000; /* Hover turuncu yerine kırmızı oldu */
+            padding-left: 5px;
+        }
 
 .contact-item {
     display: flex;
@@ -500,33 +1054,42 @@ ul {
     font-size: 14px;
 }
 
-.contact-item i { color: #e74c3c; font-size: 16px; }
-.contact-item span a {
-    text-decoration: none;  
-    color: inherit;         
-    transition: 0.3s;      
-}
+    .contact-item i {
+        color: #FF0000;
+        font-size: 16px;
+    }
+    /* İkonlar kırmızı */
+    .contact-item span a {
+        text-decoration: none;
+        color: inherit;
+        transition: 0.3s;
+    }
 
-.contact-item span a:hover {
-    color: #F56B51;         
-    text-decoration: none;  
-}
+        .contact-item span a:hover {
+            color: #FF0000;
+        }
 
-.footer-social { margin-top: 20px; display: flex; gap: 15px; }
-
-.footer-social a {
-    width: 35px;
-    height: 35px;
-    background: #34495e;
+.footer-social {
+    margin-top: 20px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    color: #fff;
-    transition: 0.3s;
+    gap: 15px;
 }
 
-.footer-social a:hover { background: #e74c3c; }
+    .footer-social a {
+        width: 35px;
+        height: 35px;
+        background: #34495e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: #fff;
+        transition: 0.3s;
+    }
+
+        .footer-social a:hover {
+            background: #FF0000;
+        }
 
 .footer-bottom {
     background: #1a252f;
@@ -541,8 +1104,55 @@ ul {
     .top-bar {
         display: none;
     }
-    /* Mobilde üst barı gizleyip alanı açmak daha iyidir */
+
     .nav-menu {
         display: none;
     }
+
+    .zigzag-item, .zigzag-item.alt {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .about-features {
+        justify-content: center;
+    }
+
+    .zigzag-image-wrapper {
+        max-width: 100%;
+    }
+
+    .image-deco-block {
+        display: none; /* Mobilde karmaşayı önlemek için deco'ları gizledik */
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .stat-card {
+        border-right: none;
+    }
+
+    .service-item, .service-item.reverse {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .service-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .service-desc {
+        text-align: center;
+    }
+
+        .service-desc h3::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
 }

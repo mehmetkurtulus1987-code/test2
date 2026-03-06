@@ -1,19 +1,18 @@
 /*Header Logo Tasarımı*/
 .logo a {
     display: flex;
-    align-items: center; /* Resim ve yazıyı dikeyde ortalar */
-    gap: 12px; /* Resim ile yazı arasındaki boşluk */
+    align-items: center;
+    gap: 12px;
     text-decoration: none;
-    transition: transform 0.3s ease;
+    transition: 0.3s;
 }
 
 /* Logo içindeki resim (webp) */
 .logo img {
-    height: 50px; /* Logonun yüksekliğini buradan ayarlayabilirsin */
+    height: 50px;
     width: auto;
     object-fit: contain;
-    /* Hafif bir gölge logoyu öne çıkarır */
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    transition: transform 0.3s ease;
 }
 
 /* Logo içindeki metin yapısı */
