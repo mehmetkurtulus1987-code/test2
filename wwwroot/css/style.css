@@ -377,6 +377,16 @@ ul {
     color: #777;
     font-size: 14px;
 }
+area-btns {
+    text-align: center;
+    background: #fff;
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+    
 /* --- Footer Stilleri --- */
 .main-footer {
     background: #2c3e50; /* Koyu lacivert kurumsal durur */
