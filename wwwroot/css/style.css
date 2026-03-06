@@ -148,7 +148,7 @@ ul {
 
 .btn {
     padding: 15px 30px;
-    border-radius: 5px;
+    border-radius: 40px;
     font-weight: bold;
     display: inline-block;
     margin: 10px;
@@ -168,6 +168,7 @@ ul {
     color: #25d366;
     transform: translateY(-3px); /* Hafif yukarı zıplama efekti */
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+    background-color: #1ebc5a;
 }
 .service-grid {
     display: grid;
