@@ -21,9 +21,20 @@ ul {
     list-style: none;
 }
 .logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+    font-size: 22px;     
+    letter-spacing: 1px; 
+    color: #fff;         
+}
+.logo strong {
+    color: #F56B51;      
+    font-weight: 800;
+}
+.logo a:hover img {
+    transform: scale(1.05); 
+}
+
+.logo a:hover {
+    opacity: 0.9;
 }
 
 .site-logo {
@@ -74,8 +85,19 @@ ul {
 }
 
 .logo a {
-    font-size: 24px;
-    color: #e74c3c; /* Servis rengi kırmızı/mavi tonları iyidir */
+    display: flex;
+    align-items: center; 
+    gap: 12px;           
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.logo img {
+    height: 50px;        
+    width: auto;        
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
 .nav-menu {
