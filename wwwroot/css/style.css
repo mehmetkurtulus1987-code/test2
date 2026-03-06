@@ -385,21 +385,21 @@ ul {
 }
 .area-btns {
     display: flex;
-    justify-content: center; /* Butonu yatayda tam ortalar */
-    margin-bottom: 40px;     /* Alttaki içerikten ayırır */
+    justify-content: center; 
+    margin-bottom: 40px;     
 }
 
 /* Sadece bu alandaki butona özel stil */
 .area-btns .btn-call {
     display: inline-flex;
     align-items: center;
-    background-color: #25d366; /* Yeşil (Güven veren arama rengi) */
+    background-color: #F56B51; 
     color: white !important;
     padding: 15px 35px;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 50px;      /* Tam yuvarlak köşeler */
+    border-radius: 50px;      
     box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
     transition: all 0.3s ease;
 }
@@ -478,6 +478,16 @@ ul {
 }
 
 .contact-item i { color: #e74c3c; font-size: 16px; }
+.contact-item span a {
+    text-decoration: none;  
+    color: inherit;         
+    transition: 0.3s;      
+}
+
+.contact-item span a:hover {
+    color: #F56B51;         
+    text-decoration: none;  
+}
 
 .footer-social { margin-top: 20px; display: flex; gap: 15px; }
 
