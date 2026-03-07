@@ -1,44 +1,31 @@
-/*Header Logo Tasarımı*/
-.logo a {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-decoration: none;
-    transition: 0.3s;
+.logo {
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #FF0000;
 }
 
-/* Logo içindeki resim (webp) */
-.logo img {
-    height: 50px;
-    width: auto;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-/* Logo içindeki metin yapısı */
-.logo a strong {
-    font-size: 24px;
-    font-weight: 800;
-    color: #2c3e50; /* Koyu gri/mavi tonu */
-    letter-spacing: -0.5px;
-    text-transform: uppercase;
-}
-
-/* "TEKNİK" yazısı için (Eğer strong dışında kalıyorsa) */
-.logo a {
-    font-size: 24px;
-    color: #e74c3c; /* Teknik kelimesini kırmızı yaparak vurgular */
-    font-weight: 400;
-}
-
-    /* Logo Hover (Üzerine gelince) Efekti */
-    .logo a:hover {
-        transform: scale(1.02); /* Çok hafif büyüme */
+    .logo strong {
+        color: #FF0000;
+        font-weight: 800;
     }
 
-        .logo a:hover img {
-            filter: drop-shadow(0 4px 8px rgba(231, 76, 60, 0.3)); /* Kırmızımsı hafif parlama */
-        }
+    .logo a:hover img {
+        transform: scale(1.05);
+    }
+
+    .logo a:hover {
+        opacity: 0.9;
+    }
+
+.site-logo {
+    height: 45px;
+    width: auto;
+    transition: 0.3s ease;
+}
+/* Çapa linki ile gidilen başlıkların header altında kalmasını önler */
+#dogalgaz, #elektrik, #kazan {
+    scroll-margin-top: 100px; /* Header yüksekliğine göre bu değeri (80px-120px) ayarlayabilirsin */
+}
 /* Arıza Kartları Sayfa Tasarımı */
 .error-hero {
     padding: 80px 0;

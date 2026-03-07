@@ -45,10 +45,7 @@ ul {
     width: auto;
     transition: 0.3s ease;
 }
-.page-urunler {
-    padding-top: 50px; /* Header altında boşluk bırakır */
-    background-color: #f4f4f4; /* Hafif gri bir zemin ürünleri öne çıkarır */
-}
+
 
 .product-group {
     padding: 60px 0;
@@ -135,6 +132,12 @@ ul {
         .nav-menu li a:hover {
             color: #2c3e50; /* Hover turuncu yerine koyu gri yapıldı */
         }
+.mobile-toggle {
+    display: none; /* Varsayılan olarak hiçbir yerde görünmesin */
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--dark-navy);
+}
 
 /* 3. Hero Bölümü Tasarımı */
 .hero {
@@ -672,16 +675,61 @@ ul {
     text-align: center;
     color: #fff;
 }
-
-    .inner-hero .highlight {
-        color: #c0392b;
-    }
-
 /* Hizmet Satırları */
 .detailed-services {
     padding: 60px 0;
     background: #fdfdfd;
 }
+.service-detail {
+    padding: 80px 0;
+    background: #fff;
+}
+.service-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.service-image {
+    flex: 0 0 350px; /* Resim kutusunun genişliğini 350px ile sabitler (Büyümez, küçülmez) */
+    width: 350px; /* Resim kutusunun genişliği */
+    height: 350px; /* Resim kutusunun yüksekliği (Kare bir alan) */
+    overflow: hidden; /* Taşmaları gizler */
+    border-radius: 15px; /* Köşeleri yuvarlar */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+    .service-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Resim sığdırılırken kesilme yapmaz, kutuyu doldurur */
+        object-position: center; /* Resmi ortalar */
+        transition: transform 0.3s ease;
+    }
+.service-text {
+    flex: 1;
+    min-width: 300px;
+}
+    .service-text h2 {
+        font-size: 28px;
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
+.service-features {
+    list-style: none;
+    padding: 20px 0;
+}
+
+    .service-features li {
+        margin-bottom: 12px;
+        font-size: 1.1rem;
+        color: #444;
+    }
+
+    .service-features i {
+        color: #c0392b; /* Senin kırmızı tonun */
+        margin-right: 10px;
+        font-size: 18px;
+    }
 
 .service-item {
     display: flex;
@@ -697,7 +745,7 @@ ul {
 .service-img {
     flex: 1;
     background: #fff;
-    height: 300px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -710,6 +758,11 @@ ul {
         font-size: 100px;
         color: #c0392b;
     }
+.service-description {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
 
 .service-desc {
     flex: 1.5;
@@ -1141,10 +1194,15 @@ ul {
         flex-direction: column;
         gap: 30px;
     }
+    .service-image {
+        flex: 0 0 280px; /* Mobilde resmi biraz daha küçültelim */
+        width: 280px;
+        height: 280px;
+    }
 
     .service-img {
         width: 100%;
-        height: 200px;
+        height: 100px;
     }
 
     .service-desc {
@@ -1155,4 +1213,14 @@ ul {
             left: 50%;
             transform: translateX(-50%);
         }
+
+    .service-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-features li {
+        text-align: left;
+        display: inline-block;
+    }
 }

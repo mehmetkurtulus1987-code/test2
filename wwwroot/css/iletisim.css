@@ -1,0 +1,177 @@
+/* iletisim.css */
+:root {
+    --primary-red: #c0392b;
+    --dark-navy: #2c3e50;
+    --light-bg: #f8f9fa;
+}
+
+.contact-main {
+    padding: 60px 0;
+    background: var(--light-bg);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+/* Sol Kolon */
+.contact-info h2 {
+    color: var(--dark-navy);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.info-list {
+    margin-top: 30px;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+    .info-card i {
+        font-size: 24px;
+        color: var(--primary-red);
+    }
+
+    .info-card h4 {
+        font-size: 0.9rem;
+        color: #777;
+        margin-bottom: 5px;
+    }
+
+    .info-card a, .info-card p {
+        font-weight: 600;
+        color: var(--dark-navy);
+        text-decoration: none;
+    }
+
+/* Sağ Kolon - Form */
+#dynamicFields select {
+    margin-bottom: 15px;
+}
+.service-areas-grid {
+    display: grid !important; /* Flex yerine Grid daha dengeli durur */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px 20px !important;
+    background: #fff !important; /* Gri yerine beyaz daha ferah durur */
+    margin-top: 20px;
+}
+
+    .service-areas-grid div {
+        padding: 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+        background: var(--light-bg);
+    }
+
+        .service-areas-grid div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+    .service-areas-grid i {
+        font-size: 30px;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .service-areas-grid h4 {
+        color: var(--dark-navy);
+        margin-bottom: 10px;
+    }
+
+    .service-areas-grid p {
+        font-size: 14px;
+        color: #666;
+    }
+.contact-form-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+    input:focus, select:focus {
+        border-color: var(--dark-navy);
+    }
+
+.btn-submit {
+    width: 100%;
+    background: var(--dark-navy);
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+    .btn-submit:hover {
+        background: var(--primary-red);
+        transform: translateY(-3px);
+    }
+
+/* Duyuru ve Harita */
+.service-notice {
+    text-align: center;
+    padding: 40px;
+    background: #fff;
+    margin: 50px 0;
+    border-radius: 15px;
+    border-left: 5px solid var(--primary-red);
+}
+
+.map-section {
+    line-height: 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .info-card {
+        text-align: left;
+    }
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}

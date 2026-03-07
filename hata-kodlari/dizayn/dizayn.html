@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dizayn Kombi Arıza Kodları ve Çözümleri | Güneri Teknik Menemen</title>
     <meta name="description" content="Dizayn kombi E1, E2, E3, E4 ve tüm hata kodlarının anlamları. Menemen, Aliağa ve Foça Dizayn kombi servisi olarak garantili tamir desteği.">
-    <link rel="icon" type="image/png" href="img/Logo/guneri-teknik-logo.webp">
-    <link rel="stylesheet" href="wwwroot/css/style.css">
+    <link rel="icon" type="image/png" href="/img/logo/guneri-teknik.webp">
+    <link rel="stylesheet" href="/wwwroot/css/style.css">
+    <link rel="stylesheet" href="/wwwroot/css/hata-kod.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="page-dizayn">
+<body class="page-error">
     <div class="top-bar">
         <div class="container">
             <div class="contact-info">
-                <span><i class="fas fa-map-marker-alt"></i>Esatpaşa,1.Abdi İpekçi Gç. No:15 Menemen, İzmir</span>
+                <span><i class="fas fa-map-marker-alt"></i> Esatpaşa,1. Abdi İpekçi Gç. No:15 Menemen, İzmir</span>
                 <a href="tel:+905376183344"><i class="fas fa-phone"></i> +90 537 618 33 44 </a>
                 <a href="mailto:info@guneriteknik.com"><i class="fas fa-envelope"></i> info@guneriteknik.com</a>
             </div>
@@ -22,164 +23,162 @@
             </div>
         </div>
     </div>
-
-    <header class="dizayn-header">
-        <<nav class="container nav-wrapper">
-            <a href="/anasayfa.html" class="logo">
-        <img src="/img/Logo/guneri-teknik-logo.webp" alt="Güneri Teknik Logo" class="site-logo">
-        <a href="/"><strong>GÜNERİ </strong> TEKNİK</a>
-            </a>
-        <input type="checkbox" id="menu-bar">
-    <label for="menu-bar" class="hamburger-icon">☰</label>
-    <label for="menu-bar" class="menu-overlay"></label>
-
-    <ul class="menu">
-        <li><a href="/">Anasayfa</a></li>
-        <li><a href="../hakkimizda">Hakkımızda</a></li>
-        <li><a href="../urunlerimiz">Ürünlerimiz</a></li>
-        <li><a href="../yedekparca">Yedek Parça</a></li>
-        <li><a href="../iletisim">İletişim</a></li>
-    </ul>
-</nav>
+    <header class="main-header">
+        <nav class="container nav-wrapper">
+            <div class="logo">
+                <a href="../../index.html">
+                    <img src="/img/logo/guneri-teknik.webp" alt="Güneri Teknik Logo">
+                    <strong>GÜNERİ TEKNİK</strong>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../../index.html" class="active">Anasayfa</a></li>
+                <li><a href="../../hakkimizda/hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="../../hizmetlerimiz/hizmetler.html">Hizmetler</a></li>
+                <li><a href="../../urunlerimiz/urunler.html">Ürünler</a></li>
+                <li><a href="../../blog/blog.html">Blog</a></li>
+                <li><a href="../../iletisim/iletisim.html">İletişim</a></li>
+            </ul>
+            <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+        </nav>
     </header>
+    <main class="main-error">
+        <section class="error-hero">
+            <div class="container">
+                <h1>Dizayn Kombi <br><span class="highlight">Arıza Kodları ve Çözüm Rehberi</span></h1>
+                <p>Dizayn kombinizde meydana gelen arızaların nedenlerini ve kullanıcı olarak uygulayabileceğiniz temel çözüm yöntemlerini inceleyin.</p>
+            </div>
+        </section>
 
-    <main>
-        <div class="error-container">
-            <div class="error-header">
-                <h1>Dizayn Kombi Arıza Kodları ve Çözüm Rehberi</h1>
-                <p>Dizayn kombinizde ekranda beliren hata kodlarının teknik karşılıklarını ve kullanıcı müdahalesi ile çözülebilecek yöntemleri aşağıda bulabilirsiniz.</p>
+        <div class="error-card">
+            <span class="error-code">E01 Hatası</span>
+            <span class="error-title">Alev algılama kitlenmeli hata</span>
+            <p>Doğalgaz gaz tipi için 3 başarısız ateşleme denemesinden sonra bu kilitlemeli hata verilir</p>
+            <div class="solution-box">
+                <strong>Çözüm:</strong> Hatayı düzeltmek için kullanıcı tarafından cihazın resetlenmesi gerekmektedir. Hata tekrarlamaya devam ederse servis çağırmalısınız.
             </div>
+        </div>
 
-            <div class="error-card">
-                <span class="error-code">E01 Hatası</span>
-                <span class="error-title">Alev algılama kitlenmeli hata</span>
-                <p>Doğalgaz gaz tipi için 3 başarısız ateşleme denemesinden sonra bu kilitlemeli hata verilir</p>
-                <div class="solution-box">
-                    <strong>Çözüm:</strong> Hatayı düzeltmek için kullanıcı tarafından cihazın resetlenmesi gerekmektedir. Hata tekrarlamaya devam ederse servis çağırmalısınız.
-                </div>
+        <div class="error-card">
+            <span class="error-code">E02 Hatası</span>
+            <span class="error-title">Aşırı ısınma emniyet termostatı kitlenmeli hata</span>
+            <p>Aşırı ısınma emniyet termostatı kontakları 3 saniye süre ile açık devre olursa bu kitlenmeli hata verilir.</p>
+            <div class="solution-box">
+                <strong>Çözüm:</strong> Hatanın düzelmesi için normal sıcaklığa dönene kadar beklenmelidir. Düzelmez ise servis çağırmalısınız.
             </div>
+        </div>
 
-            <div class="error-card">
-                <span class="error-code">E02 Hatası</span>
-                <span class="error-title">Aşırı ısınma emniyet termostatı kitlenmeli hata</span>
-                <p>Aşırı ısınma emniyet termostatı kontakları 3 saniye süre ile açık devre olursa bu kitlenmeli hata verilir.</p>
-                <div class="solution-box">
-                    <strong>Çözüm:</strong> Hatanın düzelmesi için normal sıcaklığa dönene kadar beklenmelidir. Düzelmez ise servis çağırmalısınız.
-                </div>
+        <div class="error-card">
+            <span class="error-code">E03 Hatası</span>
+            <span class="error-title">Baca gazı aşırı ısınma kitlenmeli hata</span>
+            <p>Bu hata kontrolü sadece a53 baca gazı sıcaklık sensörü kontrolü var konfigürasyonunda aktiftir. Bacagazı sıcaklığı 3 saniye süre ile 95°C’nin üzerine çıktığında bu kitlenmeli hata verilir</p>
+            <div class="solution-box">
+                <strong>Çözüm:</strong> Hatayı düzelmek için kullanıcı tarafından cihazın resetlenmesi gerekmektedir.
             </div>
+        </div>
 
-            <div class="error-card">
-                <span class="error-code">E03 Hatası</span>
-                <span class="error-title">Baca gazı aşırı ısınma kitlenmeli hata</span>
-                <p>Bu hata kontrolü sadece a53 baca gazı sıcaklık sensörü kontrolü var konfigürasyonunda aktiftir. Bacagazı sıcaklığı 3 saniye süre ile 95°C’nin üzerine çıktığında bu kitlenmeli hata verilir</p>
-                <div class="solution-box">
-                    <strong>Çözüm:</strong> Hatayı düzelmek için kullanıcı tarafından cihazın resetlenmesi gerekmektedir.
-                </div>
+        <div class="error-card">
+            <span class="error-code">E04 Hatası</span>
+            <span class="error-title">Düşük su basıncı hatası</span>
+            <p>Su basınç sensör çalışması Su basıncı < 0.4 bar ise bu hata verilir.Su basınç anahtarı kontakları 3 saniye süre ile açık devre olursa bu hata verilir. </p>
+            <div class="solution-box">
+                <strong>Çözüm:</strong> Su basıncı > 0.8 bar ise bu hata kendiliğinden düzelir.Tesisat suyu basıncı su ilave edilerek 0.8 barın üzerine çıkarıldığında kendiliğinden düzelir
             </div>
+        </div>
+        <div class="error-card">
+            <span class="error-code">E05 Hatası</span>
+            <span class="error-title">Merkezi ısıtma gidiş suyu sıcaklık sensörü hatası</span>
+            <p>Merkezi ısıtma ve kullanım suyu ısıtma çalışmaları yapılmaz </p>
+            <div class="solution-box">
+                <strong>Çözüm:</strong> Merkezi ısıtma gidiş suyu sıcaklık sensörü normal değerler ölçmeye başladığında hata kendiliğinden düzelir. Hata devam ederse servis çağırmalısınız.
+            </div>
+        </div>
+        <div class="error-card">
+            <span class="error-code">E06 Hatası</span>
+            <span class="error-title">Kullanım suyu sıcaklık sensörü hatası</span>
+            <p>Kullanım suyu sıcaklık sensörü kısa devre veya açıkdevre olduğunda bu uyarı verilir.  </p>
+            <div class="solution-box">
+                <strong>Çözüm:</strong> Kullanım suyu sıcaklık sensörü normal değerler ölçmeye başladığında uyarı kendiliğinden düzelir. Hata devam ederse servis çağırmalısınız.
+            </div>
+        </div>
+        <div class="error-card">
+            <span class="error-code">E15 Hatası</span>
+            <span class="error-title">Merkezi ısıtma dönüş suyu sıcaklık sensörü hatası</span>
+            <p>Merkezi ısıtma dönüş suyu sıcaklık sensörü kısa devre veya açık devre olduğunda bu hata verilir. Merkezi ısıtma ve kullanım suyu ısıtma çalışmaları yapılmaz. </p>
+            <div class="solution-box">
+                <strong>Çözüm:</strong> Merkezi ısıtma gidiş suyu sıcaklık sensörü normal değerler ölçmeye başladığında hata kendiliğinden düzelir. Hata devam ederse servis çağırmalısınız.
+            </div>
+        </div>
+        <div class="error-card">
+            <span class="error-code">E16 Hatası</span>
+            <span class="error-title">Fan enkoder sinyal gelmiyor kitlenmeli hata</span>
+            <p>Fan çalışırken fan enkoder sinyali 5 saniye süre ile algılanmazsa bu kilitlemeli hata verilir. </p>
+            <div class="solution-box">
+                <strong>Çözüm:</strong> Hatayı düzeltmek için kullanıcı tarafından cihazın resetlenmesi gerekmektedir. Hata devam ederse servis çağırmalısınız.
+            </div>
+        </div>
+        <div class="error-card">
+            <span class="error-code">E26 Hatası</span>
+            <span class="error-title">Merkezi ısıtma gidiş suyu aşırı ısınma hatası</span>
+            <p>Merkezi ısıtma gidiş suyunun sıcaklığı 95°C’nin üzerine çıktığında bu hata verilir, cihaz durdurulur.</p>
+            <div class="solution-box">
+                <strong>Çözüm:</strong> Merkezi ısıtma gidiş suyunun sıcaklığı 85°C’nin altınadüştüğünde hata kendiliğinden düzelir ve cihaz çalışmaya başlar. Hata devam ederse servis çağırmalısınız.
+            </div>
+        </div>
+        <div class="error-card">
+            <span class="error-code">E40 Hatası</span>
+            <span class="error-title">Fan enkoder sinyali frekansı mertebe dışı kitlenmeli hata</span>
+            <p>Fan çalışırken algılanan fan enkoder sinyalinin frekansı hedef frekansın %10 altında veya %10 üzerinde ise ve bu durum 60 saniye boyunca devam ederse bu kitlenmeli hata verilir.</p>
+            <div class="solution-box">
+                <strong>Çözüm:</strong> Hatayı düzeltmek için kullanıcı tarafından cihazın resetlenmesi gerekmektedir. Hata devam ederse servis çağırmalısınız.
+            </div>
+        </div>
+        <div class="error-card">
+            <span class="error-code">E41 Hatası</span>
+            <span class="error-title">Sahte alev algılama hatası</span>
+            <p>Gaz valfi kapalı olduğu halde alev sinyali 10 saniye süre ile beklenmeyen şekilde algılanırsa bu hata verilir.</p>
+            <div class="solution-box">
+                <strong>Çözüm:</strong> Bu 10 saniye süre içinde cihaz çalışmaya devam etmez. Sahte alev sinyali düzelirse bu hata kendiliğinden düzelir. Hata devam ederse servis çağırmalısınız.
+            </div>
+        </div>
+        <div class="error-card">
+            <span class="error-code">E42 Hatası</span>
+            <span class="error-title">Alev algılama devresi malzeme hatası</span>
+            <p>15 saniye süre boyunca alev algılama devresinden beklenen sınırların dışında bir sinyal algılanırsa bu hata verilir.</p>
+            <div class="solution-box">
+                <strong>Çözüm:</strong> 2 saniye süre boyunca alev algılama devresinden beklenen sınırlarda bir sinyal algılanırsa bu hata kendiliğinden düzelir. Hata devam ederse servis çağırmalısınız.
+            </div>
+        </div>
+        <div class="error-card">
+            <span class="error-code">E44 Hatası</span>
+            <span class="error-title">Baca gazı NTC sensör hatası</span>
+            <p>Baca gazı sensöründe herhangi bir sorun varsa (açık devre/ kısa devre) bu hatayı verecektir.</p>
+            <div class="solution-box">
+                <strong>Çözüm:</strong> Isıtma ve kullanım suyu devreleri bu hata çıktığında çalışmaz. Sorun giderildiğinde hata uyarısının bilgi ekranında görünürlüğü sona erecek olup, cihaz sorunsuz bir şekilde çalışmaya devam edecektir.
+                (Bu hata sadece P31 “baca sensörü mevcut versiyonda oluşur.) Hata devam ederse servis çağırmalısınız.
+            </div>
+        </div>
+        <div class="error-card">
+            <span class="error-code">E45 Hatası</span>
+            <span class="error-title">Baca gazı aşırı ısınma kitlenmeli hata</span>
+            <p>Bu hata kontrolü sadece A53 baca gazı sıcaklık sensörü kontrolü var konfigürasyonunda aktiftir. Baca gazı sıcaklığı 3 saniye süre ile 95 °C’nin üzerine çıktığında bu kitlenmeli hata verilir</p>
+            <div class="solution-box">
+                <strong>Çözüm:</strong> Hatayı düzeltmek için kullanıcı tarafından cihazın resetlenmesi gerekmektedir. Hata devam ederse servis çağırmalısınız.
+            </div>
+        </div>
+        <div class="error-card">
+            <span class="error-code">E46 Hatası</span>
+            <span class="error-title">Gaz valfi geri beslemesi hatası</span>
+            <p>Gaz valfi sürme veya gaz valfi geri besleme devrelerinde bir hata olursa cihaz “gaz valfi geri besleme hatası” verir.</p>
+            <div class="solution-box">
+                <strong>Çözüm:</strong> Hatayıdüzeltmek için kullanıcı tarafından cihazın resetlenmesi gerekmektedir. Hata devam ederse servis çağırmalısınız.
+            </div>
+        </div>
 
-            <div class="error-card">
-                <span class="error-code">E04 Hatası</span>
-                <span class="error-title">Düşük su basıncı hatası</span>
-                <p>Su basınç sensör çalışması Su basıncı < 0.4 bar ise bu hata verilir.Su basınç anahtarı kontakları 3 saniye süre ile açık devre olursa bu hata verilir. </p>
-                <div class="solution-box">
-                    <strong>Çözüm:</strong> Su basıncı > 0.8 bar ise bu hata kendiliğinden düzelir.Tesisat suyu basıncı su ilave edilerek 0.8 barın üzerine çıkarıldığında kendiliğinden düzelir
-                </div>
-            </div>
-            <div class="error-card">
-                <span class="error-code">E05 Hatası</span>
-                <span class="error-title">Merkezi ısıtma gidiş suyu sıcaklık sensörü hatası</span>
-                <p>Merkezi ısıtma ve kullanım suyu ısıtma çalışmaları yapılmaz </p>
-                <div class="solution-box">
-                    <strong>Çözüm:</strong> Merkezi ısıtma gidiş suyu sıcaklık sensörü normal değerler ölçmeye başladığında hata kendiliğinden düzelir. Hata devam ederse servis çağırmalısınız.
-                </div>
-            </div>
-            <div class="error-card">
-                <span class="error-code">E06 Hatası</span>
-                <span class="error-title">Kullanım suyu sıcaklık sensörü hatası</span>
-                <p>Kullanım suyu sıcaklık sensörü kısa devre veya açıkdevre olduğunda bu uyarı verilir.  </p>
-                <div class="solution-box">
-                    <strong>Çözüm:</strong> Kullanım suyu sıcaklık sensörü normal değerler ölçmeye başladığında uyarı kendiliğinden düzelir. Hata devam ederse servis çağırmalısınız.
-                </div>
-            </div>
-            <div class="error-card">
-                <span class="error-code">E15 Hatası</span>
-                <span class="error-title">Merkezi ısıtma dönüş suyu sıcaklık sensörü hatası</span>
-                <p>Merkezi ısıtma dönüş suyu sıcaklık sensörü kısa devre veya açık devre olduğunda bu hata verilir. Merkezi ısıtma ve kullanım suyu ısıtma çalışmaları yapılmaz. </p>
-                <div class="solution-box">
-                    <strong>Çözüm:</strong> Merkezi ısıtma gidiş suyu sıcaklık sensörü normal değerler ölçmeye başladığında hata kendiliğinden düzelir. Hata devam ederse servis çağırmalısınız.
-                </div>
-            </div>
-            <div class="error-card">
-                <span class="error-code">E16 Hatası</span>
-                <span class="error-title">Fan enkoder sinyal gelmiyor kitlenmeli hata</span>
-                <p>Fan çalışırken fan enkoder sinyali 5 saniye süre ile algılanmazsa bu kilitlemeli hata verilir. </p>
-                <div class="solution-box">
-                    <strong>Çözüm:</strong> Hatayı düzeltmek için kullanıcı tarafından cihazın resetlenmesi gerekmektedir. Hata devam ederse servis çağırmalısınız.
-                </div>
-            </div>
-            <div class="error-card">
-                <span class="error-code">E26 Hatası</span>
-                <span class="error-title">Merkezi ısıtma gidiş suyu aşırı ısınma hatası</span>
-                <p>Merkezi ısıtma gidiş suyunun sıcaklığı 95°C’nin üzerine çıktığında bu hata verilir, cihaz durdurulur.</p>
-                <div class="solution-box">
-                    <strong>Çözüm:</strong> Merkezi ısıtma gidiş suyunun sıcaklığı 85°C’nin altınadüştüğünde hata kendiliğinden düzelir ve cihaz çalışmaya başlar. Hata devam ederse servis çağırmalısınız.
-                </div>
-            </div>
-            <div class="error-card">
-                <span class="error-code">E40 Hatası</span>
-                <span class="error-title">Fan enkoder sinyali frekansı mertebe dışı kitlenmeli hata</span>
-                <p>Fan çalışırken algılanan fan enkoder sinyalinin frekansı hedef frekansın %10 altında veya %10 üzerinde ise ve bu durum 60 saniye boyunca devam ederse bu kitlenmeli hata verilir.</p>
-                <div class="solution-box">
-                    <strong>Çözüm:</strong> Hatayı düzeltmek için kullanıcı tarafından cihazın resetlenmesi gerekmektedir. Hata devam ederse servis çağırmalısınız.
-                </div>
-            </div>
-            <div class="error-card">
-                <span class="error-code">E41 Hatası</span>
-                <span class="error-title">Sahte alev algılama hatası</span>
-                <p>Gaz valfi kapalı olduğu halde alev sinyali 10 saniye süre ile beklenmeyen şekilde algılanırsa bu hata verilir.</p>
-                <div class="solution-box">
-                    <strong>Çözüm:</strong> Bu 10 saniye süre içinde cihaz çalışmaya devam etmez. Sahte alev sinyali düzelirse bu hata kendiliğinden düzelir. Hata devam ederse servis çağırmalısınız.
-                </div>
-            </div>
-            <div class="error-card">
-                <span class="error-code">E42 Hatası</span>
-                <span class="error-title">Alev algılama devresi malzeme hatası</span>
-                <p>15 saniye süre boyunca alev algılama devresinden beklenen sınırların dışında bir sinyal algılanırsa bu hata verilir.</p>
-                <div class="solution-box">
-                    <strong>Çözüm:</strong> 2 saniye süre boyunca alev algılama devresinden beklenen sınırlarda bir sinyal algılanırsa bu hata kendiliğinden düzelir. Hata devam ederse servis çağırmalısınız.
-                </div>
-            </div>
-            <div class="error-card">
-                <span class="error-code">E44 Hatası</span>
-                <span class="error-title">Baca gazı NTC sensör hatası</span>
-                <p>Baca gazı sensöründe herhangi bir sorun varsa (açık devre/ kısa devre) bu hatayı verecektir.</p>
-                <div class="solution-box">
-                    <strong>Çözüm:</strong> Isıtma ve kullanım suyu devreleri bu hata çıktığında çalışmaz. Sorun giderildiğinde hata uyarısının bilgi ekranında görünürlüğü sona erecek olup, cihaz sorunsuz bir şekilde çalışmaya devam edecektir.
-                    (Bu hata sadece P31 “baca sensörü mevcut versiyonda oluşur.) Hata devam ederse servis çağırmalısınız.
-                </div>
-            </div>
-            <div class="error-card">
-                <span class="error-code">E45 Hatası</span>
-                <span class="error-title">Baca gazı aşırı ısınma kitlenmeli hata</span>
-                <p>Bu hata kontrolü sadece A53 baca gazı sıcaklık sensörü kontrolü var konfigürasyonunda aktiftir. Baca gazı sıcaklığı 3 saniye süre ile 95 °C’nin üzerine çıktığında bu kitlenmeli hata verilir</p>
-                <div class="solution-box">
-                    <strong>Çözüm:</strong> Hatayı düzeltmek için kullanıcı tarafından cihazın resetlenmesi gerekmektedir. Hata devam ederse servis çağırmalısınız.
-                </div>
-            </div>
-            <div class="error-card">
-                <span class="error-code">E46 Hatası</span>
-                <span class="error-title">Gaz valfi geri beslemesi hatası</span>
-                <p>Gaz valfi sürme veya gaz valfi geri besleme devrelerinde bir hata olursa cihaz “gaz valfi geri besleme hatası” verir.</p>
-                <div class="solution-box">
-                    <strong>Çözüm:</strong> Hatayıdüzeltmek için kullanıcı tarafından cihazın resetlenmesi gerekmektedir. Hata devam ederse servis çağırmalısınız.
-                </div>
-            </div>
-
-            <div class="cta-section">
-                <h2>Dizayn Kombinizde Sorun mu Var?</h2>
-                <p>Menemen, Aliağa ve Foça bölgelerinde <strong>Dizayn Kombi Özel Servis</strong> hizmeti sunuyoruz. Uzman ekibimizle hızlı ve garantili çözümler için arayın.</p>
-                <a href="tel:+905376183344" class="cta-btn">Teknik Destek: 0537 618 33 44</a>
-            </div>
+        <div class="cta-section">
+            <h2>Dizayn Kombinizde Sorun mu Var?</h2>
+            <p>Menemen, Aliağa ve Foça bölgelerinde <strong>Dizayn Kombi Özel Servis</strong> hizmeti sunuyoruz. Uzman ekibimizle hızlı ve garantili çözümler için arayın.</p>
+            <a href="tel:+905376183344" class="cta-btn">Teknik Destek: 0537 618 33 44</a>
         </div>
     </main>
     <div class="kilavuz-box">
