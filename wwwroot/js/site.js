@@ -183,32 +183,32 @@ async function yedekParcalariYukle() {
     } catch (e) { console.error(e); }
 }
 document.addEventListener('DOMContentLoaded', () => {
-    // --- MOBİL MENÜ MANTIĞI ---
-    const mobileToggle = document.querySelector('.mobile-toggle');
-    const navMenu = document.querySelector('.nav-menu');
+    const toggleBtn = document.querySelector('.mobile-toggle');
+    const menu = document.querySelector('.nav-menu');
 
-    if (mobileToggle && navMenu) {
-        mobileToggle.addEventListener('click', function () {
-            navMenu.classList.toggle('active');
+    if (toggleBtn && menu) {
+        toggleBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            menu.classList.toggle('active');
 
-            // İkonu değiştir (Üç çizgi <-> Çarpı)
-            const icon = this.querySelector('i');
-            if (icon.classList.contains('fa-bars')) {
-                icon.classList.replace('fa-bars', 'fa-times');
-            } else {
-                icon.classList.replace('fa-times', 'fa-bars');
+            // İkonu değiştir (Bars <-> Times)
+            const icon = toggleBtn.querySelector('i');
+            if (icon) {
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            }
+        });
+
+        // Menü dışında bir yere tıklandığında kapat
+        document.addEventListener('click', (e) => {
+            if (!menu.contains(e.target) && !toggleBtn.contains(e.target)) {
+                menu.classList.remove('active');
+                const icon = toggleBtn.querySelector('i');
+                if (icon) {
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                }
             }
         });
     }
-
-    // Menü açıkken dışarıya tıklanırsa kapat
-    document.addEventListener('click', (e) => {
-        if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
-            navMenu.classList.remove('active');
-            const icon = mobileToggle.querySelector('i');
-            icon.classList.replace('fa-times', 'fa-bars');
-        }
-    });
-
-    // ... Mevcut Form ve Diğer Kodların ...
 });

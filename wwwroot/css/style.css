@@ -120,7 +120,8 @@ ul {
 }
 
 .nav-menu {
-    display: flex;
+    list-style: none;
+    gap: 20px;
 }
 
     .nav-menu li a {
@@ -1169,36 +1170,43 @@ ul {
     }
 
     /* 2. Navigasyon Menüsü Dönüşümü */
+    .mobile-toggle {
+        display: block !important; /* Hamburgeri mobilde göster */
+        color: #333;
+        z-index: 1100;
+    }
+
     .nav-menu {
+        display: flex; /* Flex yapısını koru */
         position: fixed;
         top: 0;
-        right: -100%; /* Kapalıyken ekranın dışında */
-        width: 80%; /* Ekranın %80'ini kaplar */
+        right: -100%; /* Başlangıçta ekranın dışında */
+        width: 80%;
         max-width: 300px;
         height: 100vh;
         background-color: #ffffff;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 100px 30px;
+        flex-direction: column !important;
+        padding: 100px 30px !important;
         box-shadow: -10px 0 30px rgba(0,0,0,0.2);
-        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: right 0.4s ease;
         z-index: 1050;
     }
 
-        /* JS ile tetiklenecek olan görünürlük durumu */
+        /* JavaScript tıklandığında menüyü içeri sürükler */
         .nav-menu.active {
-            right: 0;
+            right: 0 !important;
         }
 
         .nav-menu li {
-            width: 100%;
             margin-bottom: 20px;
+            width: 100%;
         }
 
             .nav-menu li a {
-                font-size: 20px;
+                font-size: 18px;
+                color: #333;
                 display: block;
-                border-bottom: 1px solid #f0f0f0;
+                border-bottom: 1px solid #eee;
                 padding-bottom: 10px;
             }
 
@@ -1263,33 +1271,22 @@ ul {
         padding: 20px 0;
     }
 }
-.nav-menu {
-    display: none; /* Veya transform: translateX(100%); */
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    z-index: 1000;
-}
 
-    /* JavaScript tıklandığında bu sınıfı ekleyecek */
-    .nav-menu.active {
-        display: flex;
-    }
-
-.menu-toggle {
-    display: block; /* Sadece mobilde görünsün */
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
 
 /* Masaüstünde butonu gizle */
 @media (min-width: 769px) {
-    .menu-toggle {
-        display: none;
+    .nav-menu {
+        display: flex !important; /* Masaüstünde görünürlüğü zorla */
+        position: static !important;
+        flex-direction: row !important;
+        background: transparent !important;
+        width: auto !important;
+        height: auto !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+    }
+
+    .mobile-toggle {
+        display: none !important; /* Masaüstünde hamburgeri gizle */
     }
 }
