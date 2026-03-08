@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\hata-kodlari",
-    "\\hata-kodlari\\maktek",
+    "\\hizmetlerimiz",
+    "\\wwwroot",
     "\\wwwroot\\css"
   ],
-  "SelectedNode": "\\hata-kodlari\\hexel",
+  "SelectedNode": "\\wwwroot\\css\\style.css",
   "PreviewInSolutionExplorer": false
 }

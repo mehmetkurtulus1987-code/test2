@@ -142,7 +142,7 @@ ul {
 /* 3. Hero Bölümü Tasarımı */
 .hero {
     height: 70vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('kombi-bg.jpg');
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/home-2573375.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -808,6 +808,9 @@ ul {
                 color: #27ae60;
                 margin-right: 10px;
             }
+.service-img i.fa-dumpster-fire {
+    color: var(--primary-red);
+}
 
 /* Butonlar */
 .service-btn {
@@ -1152,75 +1155,111 @@ ul {
     border-top: 1px solid #3e4f5f;
 }
 
-/* Mobil Uyum */
-@media (max-width: 768px) {
-    .top-bar {
-        display: none;
+/* ============================================================
+   MOBİL UYUMLULUK VE YAPI (max-width: 992px)
+   ============================================================ */
+
+@media (max-width: 992px) {
+    /* 1. Hamburger İkonu */
+    .mobile-toggle {
+        display: block; /* Header'daki display:none'ı ezdik */
+        font-size: 28px;
+        z-index: 1100;
+        cursor: pointer;
     }
 
+    /* 2. Navigasyon Menüsü Dönüşümü */
     .nav-menu {
-        display: none;
-    }
-
-    .zigzag-item, .zigzag-item.alt {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Kapalıyken ekranın dışında */
+        width: 80%; /* Ekranın %80'ini kaplar */
+        max-width: 300px;
+        height: 100vh;
+        background-color: #ffffff;
         flex-direction: column;
-        gap: 40px;
+        justify-content: flex-start;
+        padding: 100px 30px;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.2);
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 1050;
+    }
+
+        /* JS ile tetiklenecek olan görünürlük durumu */
+        .nav-menu.active {
+            right: 0;
+        }
+
+        .nav-menu li {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+            .nav-menu li a {
+                font-size: 20px;
+                display: block;
+                border-bottom: 1px solid #f0f0f0;
+                padding-bottom: 10px;
+            }
+
+    /* 3. Hero Alanı Düzenleme */
+    .hero {
+        height: 50vh; /* Mobilde biraz daha kısa tutalım */
+        padding-top: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px !important;
+        line-height: 1.2;
+    }
+
+    /* 4. Grid ve Flex Yapıları (Hizmetler ve Zigzag) */
+    .service-grid, .product-grid, .reviews-grid, .areas-grid, .stats-grid {
+        grid-template-columns: 1fr !important; /* Her şey alt alta */
+        gap: 25px;
+    }
+
+    .zigzag-item, .zigzag-item.alt, .service-item, .service-item.reverse, .service-flex {
+        flex-direction: column !important;
+        gap: 30px !important;
         text-align: center;
-        margin-bottom: 80px;
     }
 
-    .about-features {
-        justify-content: center;
+    /* 5. Görsel Boyutlandırmalar */
+    .zigzag-image-wrapper, .service-image, .service-img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        flex: none !important;
     }
 
-    .zigzag-image-wrapper {
-        max-width: 100%;
+    .service-image {
+        height: 300px !important; /* Detay sayfasındaki kare görseller için */
     }
 
-    .image-deco-block {
-        display: none; /* Mobilde karmaşayı önlemek için deco'ları gizledik */
+    .service-img {
+        height: 150px !important; /* İkonlu kutular için */
     }
 
+    /* 6. Listeler ve Yazı Ayarları */
+    .service-desc h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .service-features, .service-desc ul {
+        display: inline-block;
+        text-align: left;
+    }
+
+    /* 7. İstatistik Barı Özel (2'li görünüm mobilde daha şık durur) */
     .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 
     .stat-card {
         border-right: none;
-    }
-
-    .service-item, .service-item.reverse {
-        flex-direction: column;
-        gap: 30px;
-    }
-    .service-image {
-        flex: 0 0 280px; /* Mobilde resmi biraz daha küçültelim */
-        width: 280px;
-        height: 280px;
-    }
-
-    .service-img {
-        width: 100%;
-        height: 100px;
-    }
-
-    .service-desc {
-        text-align: center;
-    }
-
-        .service-desc h3::after {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-    .service-flex {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .service-features li {
-        text-align: left;
-        display: inline-block;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        padding: 20px 0;
     }
 }

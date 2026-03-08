@@ -48,30 +48,285 @@
                 <h1>Maktek <br><span class="highlight">Arıza Kodları ve Teknik Rehber</span></h1>
                 <p>Cihaz tipinize göre ilgili bölüme hızlıca geçiş yapabilirsiniz:</p>
 
-                <div class="brand-nav" style="display: flex; justify-content: center; gap: 15px; margin-top: 25px; flex-wrap: wrap;">
-                    <a href="#dogalgaz" class="cta-btn" style="padding: 10px 20px; font-size: 14px;">Doğalgazlı Kombiler</a>
-                    <a href="#elektrik" class="cta-btn" style="padding: 10px 20px; font-size: 14px;">Elektrikli Kombiler</a>
-                    <a href="#kazan" class="cta-btn" style="padding: 10px 20px; font-size: 14px;">Katı Yakıtlı Kazanlar</a>
+                <div class="brand-nav">
+                    <a href="#dogalgaz" class="cta-btn">Doğalgazlı Kombiler</a>
+                    <a href="#elektrik" class="cta-btn">Elektrikli Kombiler</a>
+                    <a href="#kazan" class="cta-btn">Katı Yakıtlı Kazanlar</a>
                 </div>
             </div>
         </section>
 
         <div class="container">
 
-            <div id="dogalgaz" class="section-title-wrapper" style="margin-top: 50px; border-bottom: 2px solid #c0392b; padding-bottom: 10px;">
-                <h2 style="color: #2c3e50;"><i class="fas fa-burn"></i> Doğalgazlı Kombi Hata Kodları</h2>
+            <div id="dogalgaz" class="section-title-wrapper">
+                <h2><i class="fas fa-burn"></i> Doğalgazlı Kombi Modelleri</h2>
+                <p>Lütfen kombinizin modelini seçiniz:</p>
             </div>
 
-            <div class="error-card">
-                <span class="error-code">E01 Hatası</span>
-                <span class="error-title">Başarısız Ateşleme (Gas Lack)</span>
-                <p>Cihaza gaz gelmediğinde veya iyonizasyon çubuğu alevi algılamadığında bu hata verilir.</p>
-                <div class="solution-box">
-                    <strong>Çözüm:</strong> Gaz vanalarınızın açık olduğundan emin olun ve cihazı 3 kez resetleyin. Sorun devam ederse teknik servis çağırın.
-                </div>
+            <div class="model-selection-wrapper">
+                <a href="#model-condense" class="model-link">Maktek Condense (Yoğuşmalı)</a>
+                <a href="#model-ruby" class="model-link">Maktek Ruby</a>
+                <a href="#model-epsilon" class="model-link">Maktek Epsilon ECO</a>
             </div>
-            <div id="elektrik" class="section-title-wrapper" style="margin-top: 80px; border-bottom: 2px solid #c0392b; padding-bottom: 10px;">
-                <h2 style="color: #2c3e50;"><i class="fas fa-bolt"></i> Elektrikli Kombi (Omega) Hata Kodları</h2>
+
+            <section id="model-condense" class="model-section">
+                <h3>Maktek Condense Hata Kodları</h3>
+
+                <div class="error-card">
+                    <span class="error-code">E01 Hatası</span>
+                    <span class="error-title">Baca Arızası</span>
+                    <p>Atık gazın cihazdan dışarıya atılamadığı durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Bacanın Atık gaz ve temiz hava kısımlarının açık olduğundan emin olun. Sorun devam ederse servis çağırın.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E02 Hatası</span>
+                    <span class="error-title">Isıtma NTC Sensörü Arızası</span>
+                    <p>Isıtma NTC Sensörünün kısa devre ya da arızalı durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Cihazınızı resetleyiniz. Sorun devam ederse servis çağırın.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E03 Hatası</span>
+                    <span class="error-title">Sıcak Su NTC Sensörü Arızası</span>
+                    <p>Sıcak Su NTC Sensörünün kısa devre ya da arızalı durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Cihazınızı resetleyiniz. Sorun devam ederse servis çağırın.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E04 Hatası</span>
+                    <span class="error-title">Yüksek Sıcaklık Arızası</span>
+                    <p>Isıtma devresi su sıcaklığının 93 C'den fazla aldılandığı durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Kalorifer vanalarının açık olduğundan emin olun.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E05 Hatası</span>
+                    <span class="error-title">Gaz Valfi Arızası</span>
+                    <p>Gaz Valfinin basıncının normal olmadığı durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Cihazınızı resetleyiniz. Sorun devam ederse servis çağırın.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E06 Hatası</span>
+                    <span class="error-title">Ateşleme Arızası</span>
+                    <p>Cihazınızın alev oluşturamadığı (Ateşleme Yapılamadığı) durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Gaz vanalarınızın açık olduğundan emin olun. Ocağınızı yakıp gazın olup olmadığını kontrol edin.
+                        Ocağınız yanıyor ve gaz var ise cihazınızı resetleyin. Sorun devam ederse servis çağırın.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E07 Hatası</span>
+                    <span class="error-title">Yanıltıcı Alev Arızası</span>
+                    <p>Alev tespit devresinin kontrol dışı olduğu durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Cihazınızı resetleyiniz. Sorun devam ederse servis çağırın.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E08 Hatası</span>
+                    <span class="error-title">Sirkülasyon dönüş NTC Arızası</span>
+                    <p>Sirkülasyon NTC'sinin arızalı ya da kısa devre olduğu durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Cihazınızı resetleyiniz. Sorun devam ederse servis çağırın.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E09 Hatası</span>
+                    <span class="error-title">Baca Gazı Sıcaklık Sensörü Arızası</span>
+                    <p>Baca Gazı NTC sensörünün arızalı ya da kısa devre olduğu durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Cihazınızı resetleyiniz. Sorun devam ederse servis çağırın.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">EA Hatası</span>
+                    <span class="error-title">Dış Hava Sensörü Arızası</span>
+                    <p>Sensör arızalı ya da bağlantılarında sorun olduğu durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Cihazınızı resetleyiniz. Sorun devam ederse bağlantıları kontrol etmesi için servis çağırın.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">Eb Hatası</span>
+                    <span class="error-title">Kesik Yanma Arızası</span>
+                    <p>Cihazınızın yakıcı sistemlerinde sorun olduğu durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Kontrol etmesi için servis çağırmalısınız.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">EC Hatası</span>
+                    <span class="error-title">İletişim Arızası</span>
+                    <p>Anakarta gelen sinyallerde sorun olduğu durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Kontrol etmesi için servis çağırmalısınız.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">EP Hatası</span>
+                    <span class="error-title">Kapalı Devre Basınç Arızası</span>
+                    <p>Su Basınç şarlterinde sorun olduğu durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Tesisatınız tıkalı olabilir.Kontrol etmesi için servis çağırmalısınız.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">EE Hatası</span>
+                    <span class="error-title">EEPROM Arızası</span>
+                    <p>Cihaz bellek sorunu olduğu anlamına gelir.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Cihazınızı resetleyiniz. Hata devam ederse kontrol etmesi için servis çağırmalısınız.
+                    </div>
+                </div>
+            </section>
+
+            <section id="model-ruby" class="model-section">
+                <h3>Maktek Ruby Hata Kodları</h3>
+
+                <div class="error-card">
+                    <span class="error-code">E1 Hatası</span>
+                    <span class="error-title">Baca Arızası</span>
+                    <p>Atık gazın cihazdan dışarıya atılamadığı durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Bacanın Atık gaz ve temiz hava kısımlarının açık olduğundan emin olun. Sorun devam ederse servis çağırın.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E2 Hatası</span>
+                    <span class="error-title">Isıtma NTC Sensörü Arızası</span>
+                    <p>Isıtma NTC Sensörünün kısa devre ya da arızalı durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Cihazınızı resetleyiniz. Sorun devam ederse servis çağırın.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E03 Hatası</span>
+                    <span class="error-title">Sıcak Su NTC Sensörü Arızası</span>
+                    <p>Sıcak Su NTC Sensörünün kısa devre ya da arızalı durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Cihazınızı resetleyiniz. Sorun devam ederse servis çağırın.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E04 Hatası</span>
+                    <span class="error-title">Yüksek Sıcaklık Arızası</span>
+                    <p>Isıtma devresi su sıcaklığının 93 C'den fazla aldılandığı durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Kalorifer vanalarının açık olduğundan emin olun.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E06 Hatası</span>
+                    <span class="error-title">Ateşleme Arızası</span>
+                    <p>Cihazınızın alev oluşturamadığı (Ateşleme Yapılamadığı) durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Gaz vanalarınızın açık olduğundan emin olun. Ocağınızı yakıp gazın olup olmadığını kontrol edin.
+                        Ocağınız yanıyor ve gaz var ise cihazınızı resetleyin. Sorun devam ederse servis çağırın.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E7,Eb Hatası</span>
+                    <span class="error-title">Gaz Borusu Arızası</span>
+                    <p>Sistemin düzenli ateşleme sinyali tespit edemediği durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Cihazınızı resetleyin. Sorun devam ederse servis çağırın.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">EP Hatası</span>
+                    <span class="error-title">Düşük Su basıncı Arızası </span>
+                    <p>Tesisat içerisindeki su basıncının minimum çalışma seviyesinin altına düştüğünü bildirir.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Kombinizin altındaki mavi veya siyah doldurma musluğunu açarak bar değerini 1.5 seviyesine getirin.
+                    </div>
+                </div>
+            </section>
+
+            <section id="model-epsilon" class="model-section">
+                <h3>Maktek Epsilon ECO Hata Kodları</h3>
+
+                <div class="error-card">
+                    <span class="error-code">E01 Hatası</span>
+                    <span class="error-title">Alev Oluşmama Sorunu</span>
+                    <p>Bu durum, brülör üzerinde yanma oluşmazsa meydana gelir ve LCD ekran üzerinde E01 ikaz kodu görülür.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Gaz vanasının açık olduğunu ve cihaza gaz geldiğini tespit
+                        ettikten sonra P2 Anahtarını Reset konumuna getirip, sonra istenen konuma
+                        tekrar ayarlanır. Yanma oluşuncaya kadar bu işlemi bir süre tekrarlayınız, yanma
+                        oluşmuyorsa yetkili servise haber veriniz.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E02 Hatası</span>
+                    <span class="error-title">Limit termostat Arızası</span>
+                    <p>Bu durum kalorifer devresindeki suyun sıcaklığı 95°C'nin üzerine çıkarsa
+                        yüksek sıcaklık meydana gelir ve LCD ekran üzerinde E02 ikaz kodu görülür.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Kalorifer devresindeki su sıcaklığı 60°C'ye düştüğünde
+                        cihazınız tekrar çalışacaktır. Bu hata arka arkaya 2 kez tekrar ederse yetkili
+                        servise haber veriniz.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E03 Hatası</span>
+                    <span class="error-title">Baca Termostatı Arızası</span>
+                    <p>Atık gazın cihazdan dışarıya atılamadığı durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Bacanın Atık gaz ve temiz hava kısımlarının açık olduğundan emin olun. Sorun devam ederse servis çağırın.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E04 Hatası</span>
+                    <span class="error-title">Düşük veya Yüksek Su Basıncı Arızası </span>
+                    <p>Isıtma devresindeki basınç 0,7 bar'ın altında veya 2,5 bar'ın üstünde ise cihaz
+                        <strong>devreye girmez</strong> ve LCD ekran üzerinde E04 ikaz kodu görülür.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Doldurma vanası yardımıyla, kalorifer devresi basıncı istenilen seviyeye getirilir. Sisteme basılan su basıncını LCD ekranda
+                        gözleyebilirsiniz. P1 anahtarını TEST konumuna , P2 anahtarını da YAZ konumuna getiriniz.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E05 Hatası</span>
+                    <span class="error-title">Merkezi Sistem Sensör Arızası</span>
+                    <p>Kalorifer devresindeki sensörün arızalanması durumunda,LCD ekran üzerinde EO5 ikaz kodu görülür.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Cihazınızı resetleyiniz. Sorun devam ederse servis çağırın.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E06/E12 Hatası</span>
+                    <span class="error-title">Kullanma Suyu Sensör Arızası</span>
+                    <p>Sıcak su kullanma devresindeki sensör arızasındaki, LCD ekran üzerinde E06/E12 ikaz kodu görülür.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Cihazınızı resetleyiniz. Sorun devam ederse servis çağırın.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E035 Hatası</span>
+                    <span class="error-title">Yanıltıcı Alev Arızası</span>
+                    <p>Sıcak Su NTC Sensörünün kısa devre ya da arızalı durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Cihazınızı resetleyiniz. Sorun devam ederse servis çağırın.
+                    </div>
+                </div>
+                <div class="error-card">
+                    <span class="error-code">E37 Hatası</span>
+                    <span class="error-title">Sirkülasyon Arızası</span>
+                    <p>Sıcak Su NTC Sensörünün kısa devre ya da arızalı durumlarda ortaya çıkar.</p>
+                    <div class="solution-box">
+                        <strong>Çözüm:</strong> Cihazınızı resetleyiniz. Sorun devam ederse servis çağırın.
+                    </div>
+                </div>
+            </section>
+            <div id="elektrik" class="section-title-wrapper">
+                <h2><i class="fas fa-bolt"></i> Elektrikli Kombi (Omega)</h2>
             </div>
 
             <div class="error-card">
@@ -123,8 +378,8 @@
                     Bu durumda doldurma vanasından su ilavesi yapılmalıdır.
                 </div>
             </div>
-            <div id="kazan" class="section-title-wrapper" style="margin-top: 80px; border-bottom: 2px solid #c0392b; padding-bottom: 10px;">
-                <h2 style="color: #2c3e50;"><i class="fas fa-fire"></i> Katı Yakıtlı Kazan Hata Kodları</h2>
+            <div id="kazan" class="section-title-wrapper">
+                <h2><i class="fas fa-fire"></i> Katı Yakıtlı Kazanlar</h2>
             </div>
 
             <div class="error-card">
@@ -132,23 +387,25 @@
                 <span class="error-title">Yakıt yok anlamına gelir.</span>
                 <p>Yakıt bitmiş yada sıkışmış olabilir.</p>
                 <div class="solution-box">
-                    <strong>Çözüm:</strong> Bunkerde yakıt olup olmadığını kontrol edin. Yakıt yoksa ilave ediniz. 
+                    <strong>Çözüm:</strong> Bunkerde yakıt olup olmadığını kontrol edin. Yakıt yoksa ilave ediniz.
+                    Bunkerde yakıt varsa sıkışmış olabilir. Bu durumda bir cisim ile yakıtı aşağıya doğru itiniz.
                 </div>
             </div>
             <div class="error-card">
                 <span class="error-code">H2 Hatası</span>
-                <span class="error-title">Isı sensörü takılı değil veya arızalı</span>
-                <p>Kazan suyu sıcaklığı 95 derecenin üzerine çıktığında güvenlik amacıyla fan kapatılır ve alarm verilir.</p>
+                <span class="error-title">Isı sensörü ya da kart arızalı olabilir.</span>
+                <p>Isı sensörü ya da kartın arızalı olduğu durumlarda oluşur.</p>
                 <div class="solution-box">
-                    <strong>Çözüm:</strong> Sirkülasyon pompasının çalıştığından emin olun, radyatör vanalarını kontrol edin. Kazana soğuk su takviyesi yapmayın, kendi kendine soğumasını bekleyin.
+                    <strong>Çözüm:</strong> Servis çağırın.
                 </div>
             </div>
             <div class="error-card">
                 <span class="error-code">H3 Hatası</span>
                 <span class="error-title">Kazan suyu sıcaklığı çok yüksek.</span>
-                <p>Kazan suyu sıcaklığı 95 derecenin üzerine çıktığında güvenlik amacıyla fan kapatılır ve alarm verilir.</p>
+                <p>Kazan suyu sıcaklığı 95 derecenin üzerine çıktığında güvenlik amacıyla alarm verilir.</p>
                 <div class="solution-box">
-                    <strong>Çözüm:</strong> Sirkülasyon pompasının çalıştığından emin olun, radyatör vanalarını kontrol edin. Kazana soğuk su takviyesi yapmayın, kendi kendine soğumasını bekleyin.
+                    <strong>Çözüm:</strong> Kazan içinde su olduğunu kontrol edin. Sistemde hava var, Sirkülasyon olmuyor. Sistemin havasını alın.
+                    Kazan vanaları kapalı olabilir. Sirkülasyon pompası sıkışık olabilir.
                 </div>
             </div>
             <div class="error-card">

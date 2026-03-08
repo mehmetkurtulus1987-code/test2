@@ -22,10 +22,111 @@
     width: auto;
     transition: 0.3s ease;
 }
+/* Alt Model Navigasyonu (Condense, Ruby, Epsilon) */
+
+.model-selection-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.model-link {
+    padding: 12px 25px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    color: var(--dark-navy);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+    .model-link:hover {
+        background-color: var(--dark-navy);
+        color: #fff;
+        border-color: var(--dark-navy);
+        transform: translateY(-2px);
+    }
+/* Her Modelin Kendi Başlık Alanı */
+.model-section h3 {
+    background-color: var(--dark-navy);
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin: 40px 0 20px 0;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    .model-section h3::before {
+        content: "\f105"; /* FontAwesome ok işareti */
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+    }
 /* Çapa linki ile gidilen başlıkların header altında kalmasını önler */
 #dogalgaz, #elektrik, #kazan {
     scroll-margin-top: 100px; /* Header yüksekliğine göre bu değeri (80px-120px) ayarlayabilirsin */
 }
+#dogalgaz, #elektrik, #kazan,
+#model-condense, #model-ruby, #model-epsilon {
+    scroll-margin-top: 110px;
+}
+/* Ana Kategori Başlıkları (Doğalgaz, Elektrik, Kazan) */
+.brand-nav {
+    margin-top: 20px; /* Bu değeri artırarak mesafeyi daha da açabilirsiniz */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.section-title-wrapper {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+    .section-title-wrapper h2 {
+        font-size: 2.2rem;
+        color: var(--dark-navy);
+        display: inline-block;
+        padding: 10px 30px;
+        background: #fff;
+        position: relative;
+        z-index: 2;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    /* Başlığın arkasındaki şık çizgi */
+    .section-title-wrapper::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, transparent, var(--primary-red), transparent);
+        z-index: 1;
+    }
+
+    .section-title-wrapper i {
+        color: var(--primary-red);
+        margin-right: 15px;
+    }
+
+    /* Alt açıklama yazısı */
+    .section-title-wrapper p {
+        margin-top: 10px;
+        color: #666;
+        font-weight: 500;
+    }
 /* Arıza Kartları Sayfa Tasarımı */
 .error-hero {
     padding: 80px 0;
@@ -202,5 +303,19 @@
 
     .kilavuz-links {
         flex-direction: column;
+    }
+    .model-selection-wrapper {
+        gap: 10px;
+    }
+    .section-title-wrapper h2 {
+        font-size: 1.5rem;
+        padding: 5px 15px;
+    }
+
+    .model-link {
+        flex: 1 1 45%; /* Yan yana ikişerli dizilmeleri için */
+        text-align: center;
+        padding: 10px;
+        font-size: 13px;
     }
 }
