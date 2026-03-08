@@ -1,12 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\hizmetlerimiz",
-    "\\iletisim",
+    "\\urunlerimiz",
     "\\wwwroot",
     "\\wwwroot\\css",
     "\\wwwroot\\js"
   ],
-  "SelectedNode": "\\wwwroot\\js\\site.js",
+  "SelectedNode": "\\urunlerimiz\\urunler.html",
   "PreviewInSolutionExplorer": false
 }
