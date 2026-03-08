@@ -183,17 +183,21 @@ async function yedekParcalariYukle() {
     } catch (e) { console.error(e); }
 }
 // MOBIL MENÜ TOGGLE
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const toggle = document.querySelector('.mobile-toggle');
     const menu = document.querySelector('.nav-menu');
 
     if (toggle && menu) {
-        toggle.addEventListener('click', function() {
+        toggle.onclick = function (e) {
+            e.preventDefault();
             menu.classList.toggle('active');
-            console.log("Menü tıklandı!"); // Çalışıp çalışmadığını konsoldan gör
-        });
-    }
-});
+
+            const icon = toggle.querySelector('i');
+            if (icon) {
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            }
+        };
 
         // Menü dışına tıklandığında otomatik kapatma
         document.addEventListener('click', (e) => {
