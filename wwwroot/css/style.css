@@ -143,7 +143,7 @@ ul {
 /* 3. Hero Bölümü Tasarımı */
 .hero {
     height: 70vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/home-2573375.png');
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../../img/home-2573375.png');
     background-size: cover;
     background-position: center;
     display: flex;
