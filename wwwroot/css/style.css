@@ -1040,6 +1040,146 @@ ul {
         color: var(--dark-navy);
         padding-left: 5px;
     }
+/* --- ALİAĞA LOKASYON SAYFASI ÖZEL STİLLERİ --- */
+
+.location-page {
+    background-color: #fdfdfd;
+}
+
+/* 1. Hero Bölümü */
+.location-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('/img/aliaga-bg.jpg'); /* Aliağa temalı bir görsel ekleyebilirsin */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.location-hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.location-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.location-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.call-btn {
+    display: inline-block;
+    background-color: #FF0000;
+    color: white !important;
+    padding: 20px 40px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.call-btn:hover {
+    transform: translateY(-5px);
+    background-color: #2c3e50;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+/* 2. Özellik Kartları (Features) */
+.location-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 60px 10% 40px;
+    margin-top: -50px; /* Hero'nun üzerine hafif binmesi için */
+}
+
+.feature-card {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
+    border-top: 5px solid #FF0000;
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* 3. Metin İçeriği ve Mahalleler */
+.location-text-content {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.location-text-content h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.location-text-content p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.neighborhoods {
+    background: #f4f4f4;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.neighborhoods h4 {
+    font-size: 1.5rem;
+    color: #FF0000;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.neighborhoods ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.neighborhoods ul li {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #444;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
 
 /* --- Footer Stilleri --- */
 .main-footer {
@@ -1157,7 +1297,7 @@ ul {
 }
 
 /* ============================================================
-   MOBİL UYUMLULUK VE YAPI (max-width: 992px)
+   MOBİL UYUMLULUK VE YAPI (max-width: 768px)
    ============================================================ */
 
 @media (max-width: 768px) {
@@ -1280,6 +1420,27 @@ ul {
         border-right: none;
         border-bottom: 1px solid rgba(255,255,255,0.1);
         padding: 20px 0;
+    }
+.location-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .location-hero p {
+        font-size: 1rem;
+    }
+    
+    .call-btn {
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+
+    .location-features {
+        padding: 40px 20px;
+        margin-top: 0;
+    }
+
+    .neighborhoods ul {
+        grid-template-columns: 1fr;
     }
 }
 
