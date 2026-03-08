@@ -1163,33 +1163,35 @@ ul {
 @media (max-width: 992px) {
     /* 1. Hamburger İkonu */
     .mobile-toggle {
-        display: block; /* Header'daki display:none'ı ezdik */
-        font-size: 28px;
-        z-index: 1100;
+        display: block !important;
+        z-index: 1101;
         cursor: pointer;
+        padding: 10px;
     }
 
-    /* 2. Navigasyon Menüsü Dönüşümü */
-    .mobile-toggle {
-        display: block !important; /* Hamburgeri mobilde göster */
-        color: #333;
-        z-index: 1100;
+        .mobile-toggle.active {
+            color: #FF0000; /* Tıklandığında kırmızı olsun */
+        }
+    .logo {
+        z-index: 1101; /* Logonun hep üstte kalması için */
     }
+    /* 2. Navigasyon Menüsü Dönüşümü */
+
 
     .nav-menu {
-        display: flex; /* Flex yapısını koru */
+        display: flex !important; /* Görünürlüğü JS değil CSS kontrol etsin */
         position: fixed;
         top: 0;
-        right: -100%; /* Başlangıçta ekranın dışında */
-        width: 80%;
-        max-width: 300px;
+        right: -100%; /* Başlangıçta gizli */
+        width: 280px;
         height: 100vh;
-        background-color: #ffffff;
+        background: #ffffff;
         flex-direction: column !important;
-        padding: 100px 30px !important;
-        box-shadow: -10px 0 30px rgba(0,0,0,0.2);
-        transition: right 0.4s ease;
-        z-index: 1050;
+        padding: 80px 20px 20px 20px !important;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+        transition: 0.4s right ease-in-out;
+        z-index: 1100;
+        margin: 0;
     }
 
         /* JavaScript tıklandığında menüyü içeri sürükler */
@@ -1198,16 +1200,15 @@ ul {
         }
 
         .nav-menu li {
-            margin-bottom: 20px;
-            width: 100%;
+            margin: 15px 0;
+            border-bottom: 1px solid #eee;
         }
 
             .nav-menu li a {
                 font-size: 18px;
-                color: #333;
                 display: block;
-                border-bottom: 1px solid #eee;
-                padding-bottom: 10px;
+                padding: 10px 0;
+                color: #333 !important;
             }
 
     /* 3. Hero Alanı Düzenleme */
@@ -1276,14 +1277,14 @@ ul {
 /* Masaüstünde butonu gizle */
 @media (min-width: 769px) {
     .nav-menu {
-        display: flex !important; /* Masaüstünde görünürlüğü zorla */
         position: static !important;
-        flex-direction: row !important;
-        background: transparent !important;
-        width: auto !important;
+        display: flex !important;
+        right: auto !important;
         height: auto !important;
+        width: auto !important;
         box-shadow: none !important;
         padding: 0 !important;
+        background: transparent !important;
     }
 
     .mobile-toggle {
