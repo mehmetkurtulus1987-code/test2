@@ -159,19 +159,112 @@ input, select, textarea {
 }
 
 /* Mobil Uyumluluk */
-@media (max-width: 992px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
+/* ============================================================
+   İLETİŞİM SAYFASI MOBİL UYUMLULUK (max-width: 768px)
+   ============================================================ */
+
+@media (max-width: 768px) {
+    /* 1. Genel Padding Ayarı */
+    .contact-main {
+        padding: 40px 0;
     }
 
-    .contact-info {
+    /* 2. Başlık Boyutu */
+    .contact-info h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    /* 3. Bilgi Kartları (Telefon, E-posta, Adres) */
+    .info-card {
+        padding: 15px;
+        gap: 15px;
+        flex-direction: column; /* Mobilde ikon üstte, metin altta */
         text-align: center;
     }
 
-    .info-card {
-        text-align: left;
+        .info-card i {
+            font-size: 28px;
+        }
+
+        .info-card h4 {
+            margin-bottom: 2px;
+        }
+
+    /* 4. İletişim Formu Kartı */
+    .contact-form-card {
+        padding: 25px 20px;
+        margin-top: 20px;
+        border-radius: 15px;
     }
+
     .form-row {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Ad ve Soyad alt alta */
+        gap: 10px;
+    }
+
+    input, select, textarea {
+        padding: 14px; /* Mobilde dokunma alanı için biraz daha geniş */
+        font-size: 16px; /* Mobilde input odaklandığında zoom yapmasını engeller */
+    }
+
+    .btn-submit {
+        padding: 18px;
+        font-size: 17px;
+    }
+
+    /* 5. Hizmet Bölgeleri Grid Yapısı */
+    .service-areas-grid {
+        grid-template-columns: 1fr; /* Bölgeler tek sütun */
+        padding: 20px 10px !important;
+        gap: 15px;
+    }
+
+        .service-areas-grid div {
+            text-align: center;
+        }
+
+    /* 6. Duyuru Panosu */
+    .service-notice {
+        padding: 25px 15px;
+        margin: 30px 10px;
+        border-left: none;
+        border-top: 5px solid var(--primary-red); /* Mobilde çizgi üste gelsin */
+    }
+
+    /* 7. Harita Alanı */
+    .map-section iframe {
+        height: 300px; /* Mobilde harita yüksekliğini sabitleyelim */
+    }
+
+    .nav-menu {
+        display: none; /* Veya transform: translateX(100%); */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        z-index: 1000;
+    }
+
+        /* JavaScript tıklandığında bu sınıfı ekleyecek */
+        .nav-menu.active {
+            display: flex;
+        }
+
+    .menu-toggle {
+        display: block; /* Sadece mobilde görünsün */
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Masaüstünde butonu gizle */
+    @media (min-width: 769px) {
+        .menu-toggle {
+            display: none;
+        }
     }
 }

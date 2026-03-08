@@ -94,21 +94,22 @@
                             <option value="yedekparca">Yedek Parça Talebi</option>
                         </select>
 
-                        <div id="dynamicFields">
-                            <select id="brandSelect" style="display:none; margin-top:15px;">
-                                <option value="" disabled selected>Cihaz Markası</option>
-                                <option value="Hexel">Hexel</option>
-                                <option value="Dizayn">Dizayn</option>
-                                <option value="Maktek">Maktek</option>
-                                <option value="Sanica">Sanica</option>
-                                <option value="Ariston">Ariston</option>
-                                <option value="Diger">Diğer</option>
-                            </select>
+                        <select id="brandSelect" onchange="toggleFields()" style="display:none; margin-top:15px;">
+                            <option value="" disabled selected>Cihaz Markası</option>
+                            <option value="Hexel">Hexel</option>
+                            <option value="Dizayn">Dizayn</option>
+                            <option value="Maktek">Maktek</option>
+                            <option value="Sanica">Sanica</option>
+                            <option value="Ariston">Ariston</option>
+                        </select>
 
-                            <select id="warrantySelect" style="display:none; margin-top:15px;">
-                                <option value="hayir">Garanti Bitti / Yok</option>
-                                <option value="evet">Garanti Devam Ediyor</option>
-                            </select>
+                        <select id="warrantySelect" onchange="toggleFields()" style="display:none; margin-top:15px;">
+                            <option value="" disabled selected>Garanti Durumu</option>
+                            <option value="hayir">Garanti Bitti / Yok</option>
+                            <option value="evet">Garanti Devam Ediyor</option>
+                        </select>
+                        <div id="manualBrandGroup" style="display:none; margin-top:15px;">
+                            <input type="text" id="manualBrandInput" placeholder="Cihazınızın Marka ve Modelini Yazınız">
                         </div>
 
                         <textarea placeholder="Mesajınız..." rows="4"></textarea>
@@ -222,5 +223,6 @@
             }
         }
     </script>
+    <script src="../wwwroot/js/site.js"></script>
 </body>
 </html>

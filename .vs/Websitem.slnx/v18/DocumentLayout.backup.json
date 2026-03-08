@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Metehan\\Desktop\\Websitem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Metehan\\Desktop\\Websitem\\hata-kodlari\\maktek\\maktek.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:hata-kodlari\\maktek\\maktek.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Metehan\\Desktop\\Websitem\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Metehan\\Desktop\\Websitem\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Metehan\\Desktop\\Websitem\\hizmetlerimiz\\hizmetler.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:hizmetlerimiz\\hizmetler.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "maktek.html",
-              "DocumentMoniker": "C:\\Users\\Metehan\\Desktop\\Websitem\\hata-kodlari\\maktek\\maktek.html",
-              "RelativeDocumentMoniker": "hata-kodlari\\maktek\\maktek.html",
-              "ToolTip": "C:\\Users\\Metehan\\Desktop\\Websitem\\hata-kodlari\\maktek\\maktek.html",
-              "RelativeToolTip": "hata-kodlari\\maktek\\maktek.html",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAAAIYAAABzAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Metehan\\Desktop\\Websitem\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Users\\Metehan\\Desktop\\Websitem\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAAIAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-03-07T13:45:04.101Z",
+              "WhenOpened": "2026-03-08T08:33:49.774Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\Metehan\\Desktop\\Websitem\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
+              "ToolTip": "C:\\Users\\Metehan\\Desktop\\Websitem\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "wwwroot\\css\\style.css",
+              "ViewState": "AgIAAIEEAAAAAAAAAAAAAIYEAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-08T09:48:03.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "hizmetler.html",
+              "DocumentMoniker": "C:\\Users\\Metehan\\Desktop\\Websitem\\hizmetlerimiz\\hizmetler.html",
+              "RelativeDocumentMoniker": "hizmetlerimiz\\hizmetler.html",
+              "ToolTip": "C:\\Users\\Metehan\\Desktop\\Websitem\\hizmetlerimiz\\hizmetler.html",
+              "RelativeToolTip": "hizmetlerimiz\\hizmetler.html",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAAAIoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-03-08T09:25:40.234Z",
               "EditorCaption": ""
             }
           ]

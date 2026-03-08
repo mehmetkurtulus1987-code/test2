@@ -2,9 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\hizmetlerimiz",
+    "\\iletisim",
     "\\wwwroot",
-    "\\wwwroot\\css"
+    "\\wwwroot\\css",
+    "\\wwwroot\\js"
   ],
-  "SelectedNode": "\\wwwroot\\css\\style.css",
+  "SelectedNode": "\\wwwroot\\css\\iletisim.css",
   "PreviewInSolutionExplorer": false
 }
