@@ -188,10 +188,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const menu = document.querySelector('.nav-menu');
 
     if (toggle && menu) {
-        toggle.onclick = function (e) {
-            e.preventDefault();
+        toggle.onclick = function () {
             menu.classList.toggle('active');
 
+            // İkonu değiştir (Üç çizgi -> Çarpı)
             const icon = toggle.querySelector('i');
             if (icon) {
                 icon.classList.toggle('fa-bars');
