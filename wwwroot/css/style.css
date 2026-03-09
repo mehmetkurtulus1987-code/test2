@@ -1040,7 +1040,7 @@ ul {
         color: var(--dark-navy);
         padding-left: 5px;
     }
-/* --- ALİAĞA LOKASYON SAYFASI ÖZEL STİLLERİ --- */
+/* --- LOKASYON SAYFASI ÖZEL STİLLERİ --- */
 
 .location-page {
     background-color: #fdfdfd;
@@ -1179,6 +1179,51 @@ ul {
     color: #444;
     font-size: 0.95rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+/* --- LOKASYON SAYFASI ARIZA KODLARI TASARIMI --- */
+.error-codes-location {
+    padding: 60px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.error-codes-location .section-title {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.error-codes-location .section-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+/* Bilgilendirme Notu (Quick Help Note) */
+.quick-help-note {
+    margin-top: 25px;
+    padding: 15px;
+    background: #fff5f5; /* Çok hafif bir kırmızı tonu */
+    border-left: 4px solid #FF0000;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.quick-help-note p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.quick-help-note i {
+    color: #FF0000;
+    margin-right: 8px;
 }
 
 /* --- Footer Stilleri --- */
@@ -1441,6 +1486,22 @@ ul {
 
     .neighborhoods ul {
         grid-template-columns: 1fr;
+    }
+/* LOKASYON SAYFALARI MOBIL */
+.error-codes-location .section-title {
+        font-size: 1.6rem;
+        padding: 0 15px;
+    }
+    
+    .error-codes-location .section-subtitle {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .quick-help-note {
+        margin: 20px 15px 0 15px;
+        display: block; /* Mobilde tam genişlik kaplasın */
+        text-align: left;
     }
 }
 
