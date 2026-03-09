@@ -1047,29 +1047,13 @@ ul {
 }
 
 /* 1. Hero Bölümü */
-.aliaga-hero {
-    background: linear-gradient(rgba(44, 62, 80, 0.2), rgba(44, 62, 80, 0.4)), url('../../img/warnemunde-8079731.jpg'); 
+.aliaga-hero, .menemen-hero, .foca-hero {
     background-size: cover;
     background-position: center;
     padding: 100px 0;
     color: white;
     text-align: center;
-}
-.menemen-hero {
-    background: linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.4)), url('../../img/su-ucuran-selalesi.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
-    color: white;
-    text-align: center;
-}
-.foca-hero {
-    background: linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.3)), url('../../img/foca-bg.webp');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
-    color: white;
-    text-align: center;
+    background-repeat: no-repeat;
 }
 
 .location-hero .hero-content {
@@ -1529,6 +1513,18 @@ ul {
         display: block; /* Mobilde tam genişlik kaplasın */
         text-align: left;
     }
+    .aliaga-hero, .menemen-hero, .foca-hero {
+        padding: 60px 0;
+    }
+    .aliaga-hero {
+        background-image: linear-gradient(rgba(44, 62, 80, 0.4), rgba(44, 62, 80, 0.6)), url('../../img/aliaga-mobil.jpg');
+    }
+    .menemen-hero {
+        background-image: linear-gradient(rgba(44, 62, 80, 0.4), rgba(44, 62, 80, 0.6)), url('../../img/menemen-mobil.jpg');
+    }
+    .foca-hero {
+        background-image: linear-gradient(rgba(44, 62, 80, 0.4), rgba(44, 62, 80, 0.6)), url('../../img/foca-mobil.webp');
+    }
 }
 
 
@@ -1547,5 +1543,15 @@ ul {
 
     .mobile-toggle {
         display: none !important; /* Masaüstünde hamburgeri gizle */
+    }
+    
+    .aliaga-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.2), rgba(44, 62, 80, 0.4)), url('../../img/warnemunde-8079731.jpg');     
+    }
+    .menemen-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.4)), url('../../img/su-ucuran-selalesi.jpg');    
+    }
+    .foca-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.3)), url('../../img/foca-bg.webp');    
     }
 }
