@@ -1051,19 +1051,18 @@ ul {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;    
-    min-height: auto; 
+    min-height: 60vh; 
     display: flex; 
     align-items: center; 
     justify-content: center;    
     color: white;
     text-align: center;
-    padding: 100px 0; 
+    padding: 120px 0; 
 }
 
 .location-hero .hero-content {
-    max-width: 1000px; 
+    max-width: auto; 
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 .location-hero h1 {
