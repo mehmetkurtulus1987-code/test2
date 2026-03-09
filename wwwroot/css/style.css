@@ -1059,6 +1059,9 @@ ul {
     background: linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.3)), url('../../img/menemen.jpg');
     background-size: cover;
     background-position: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
 }
 
 .location-hero .hero-content {
