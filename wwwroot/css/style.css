@@ -5,60 +5,53 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
 }
-
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
 }
-
 a {
     text-decoration: none;
     transition: 0.3s;
 }
-
 ul {
     list-style: none;
 }
-
 .logo {
     font-size: 22px;
     letter-spacing: 1px;
     color: #FF0000;
 }
-
     .logo strong {
         color: #FF0000;
         font-weight: 800;
     }
-
     .logo a:hover img {
         transform: scale(1.05);
     }
-
     .logo a:hover {
         opacity: 0.9;
     }
-
 .site-logo {
     height: 45px;
     width: auto;
     transition: 0.3s ease;
 }
-
-
 .product-group {
     padding: 60px 0;
     border-bottom: 1px solid #ddd;
 }
-
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 40px;
 }
-
 /* 1. Üst Bilgi Çubuğu (Top Bar) */
 .top-bar {
     background: #2c3e50; /* Koyu gri/lacivert yapıldı (Footer ile uyumlu) */
@@ -67,13 +60,11 @@ ul {
     font-size: 13px;
     border-bottom: 1px solid #3e4f5f; /* Alt çizgi biraz daha koyu yapıldı */
 }
-
     .top-bar .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
 .contact-info a, .contact-info span {
     margin-right: 15px;
     color: #ffffff; /* Linkler ve metinler beyaz yapıldı */
@@ -81,12 +72,10 @@ ul {
     .contact-info a:hover {
         color: #FF0000; /* Üzerine gelince ikonlar gibi kırmızı olsun */
     }
-
 .whatsapp-link {
     color: #ffffff; /* WhatsApp linki de koyu gri yerine beyaz yapıldı */
     font-weight: bold;
 }
-
 /* 2. Yapışkan Header (Sticky Header) */
 .main-header {
     background: #fff;
@@ -96,13 +85,11 @@ ul {
     top: 0;
     z-index: 1000;
 }
-
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .logo a {
     display: flex;
     align-items: center;
@@ -110,26 +97,21 @@ ul {
     text-decoration: none;
     transition: 0.3s;
 }
-
-
 .logo img {
     height: 50px;
     width: auto;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
-
 .nav-menu {
     list-style: none;
     gap: 20px;
 }
-
     .nav-menu li a {
         padding: 10px 15px;
         color: #333;
         font-weight: 500;
     }
-
         .nav-menu li a:hover {
             color: #2c3e50; /* Hover turuncu yerine koyu gri yapıldı */
         }
@@ -139,7 +121,6 @@ ul {
     font-size: 24px;
     color: var(--dark-navy);
 }
-
 /* 3. Hero Bölümü Tasarımı */
 .hero {
     height: 70vh;
@@ -151,12 +132,10 @@ ul {
     color: white;
     text-align: center;
 }
-
 .hero-content h1 {
     font-size: 48px;
     margin-bottom: 20px;
 }
-
 .hero-content p {
     font-size: 20px;
     margin-bottom: 30px;
@@ -171,7 +150,6 @@ ul {
     text-align: center;
     border-bottom: 1px solid #eee;
 }
-
 .brand-logos {
     display: flex;
     align-items: center;
@@ -180,7 +158,6 @@ ul {
     flex-wrap: wrap;
     margin-top: 15px;
 }
-
     .brand-logos img {
         height: 20px;
         width: auto;
@@ -188,12 +165,10 @@ ul {
         display: block;
         object-fit: contain;
     }
-
         .brand-logos img:hover {
             transform: translateY(-5px);
             opacity: 1;
         }
-
 .btn {
     padding: 15px 30px;
     border-radius: 40px;
@@ -201,17 +176,14 @@ ul {
     display: inline-block;
     margin: 10px;
 }
-
 .btn-call {
     background: #FF0000;
     color: white;
 }
-
 .btn-wa {
     background: #2c3e50; /* Turuncu/Yeşil yerine koyu gri */
     color: white;
 }
-
 .btn-cal .btn-wa:hover {
     background-color: white;
     color: #2c3e50;
@@ -219,14 +191,12 @@ ul {
     box-shadow: 0 6px 20px rgba(44, 62, 80, 0.5);
     background-color: #34495e;
 }
-
 .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     margin-top: 30px;
 }
-
 .service-card {
     background: #f9f9f9;
     padding: 30px;
@@ -235,13 +205,11 @@ ul {
     transition: 0.3s;
     border: 1px solid #eee;
 }
-
     .service-card:hover {
         background: #fff;
         box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         transform: translateY(-5px);
     }
-
     .service-card i {
         font-size: 40px;
         color: #FF0000;
@@ -253,7 +221,6 @@ ul {
     padding: 60px 0;
     text-align: center;
 }
-
 .brand-selection {
     display: flex;
     justify-content: center;
@@ -261,7 +228,6 @@ ul {
     flex-wrap: wrap;
     margin-top: 30px;
 }
-
 .brand-btn {
     background: #fff;
     border: 2px solid #FF0000;
@@ -270,30 +236,25 @@ ul {
     border-radius: 30px;
     font-weight: bold;
 }
-
     .brand-btn:hover {
         background: #FF0000;
         color: #fff;
     }
-
 /* Servis Süreci */
 .process {
     padding: 80px 0;
 }
-
 .process-wrapper {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     margin-top: 40px;
 }
-
 .process-step {
     flex: 1;
     text-align: center;
     position: relative;
 }
-
 .step-number {
     width: 60px;
     height: 60px;
@@ -305,24 +266,20 @@ ul {
     border-radius: 50%;
     margin: 0 auto 20px;
 }
-
 .process-step h3 {
     margin-bottom: 10px;
     color: #333;
 }
-
 .google-reviews {
     background: #fff;
     padding: 80px 0;
 }
-
 .reviews-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 25px;
     margin-top: 40px;
 }
-
 .review-card {
     background: #ffffff;
     border: 1px solid #e0e0e0;
@@ -331,7 +288,6 @@ ul {
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
     position: relative;
 }
-
 .review-header {
     display: flex;
     align-items: center;
@@ -339,24 +295,20 @@ ul {
     margin-bottom: 15px;
     position: relative;
 }
-
     .review-header img:not(.g-icon) {
         width: 50px;
         height: 50px;
         border-radius: 50%;
         object-fit: cover;
     }
-
     .review-header h4 {
         font-size: 16px;
         margin-bottom: 2px;
     }
-
 .stars {
     color: #fbbc05;
     font-size: 14px;
 }
-
 .g-icon {
     width: 20px;
     height: 20px;
@@ -364,42 +316,35 @@ ul {
     right: 0;
     top: 0;
 }
-
 .review-card p {
     color: #555;
     font-style: italic;
     line-height: 1.6;
     margin-bottom: 15px;
 }
-
 .review-date {
     font-size: 12px;
     color: #999;
 }
-
 .all-reviews-link {
     text-align: center;
     margin-top: 40px;
 }
-
     .all-reviews-link a {
         color: #4285f4;
         font-weight: 600;
         text-decoration: underline;
     }
-
 .service-areas {
     background: #fdfdfd;
     padding: 70px 0;
 }
-
 .areas-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
     margin-top: 40px;
 }
-
 .area-item {
     position: relative;
     background: #fff;
@@ -414,18 +359,15 @@ ul {
     overflow: hidden;
     z-index: 1;
 }
-
     .area-item i {
         color: #FF0000;
         font-size: 18px;
     }
-
     .area-item span {
         font-weight: 600;
         color: #333;
         font-size: 16px;
     }
-
     .area-item::before {
         content: '';
         position: absolute;
@@ -437,34 +379,28 @@ ul {
         transition: left 0.5s ease;
         z-index: -1;
     }
-
     .area-item:hover {
         border-color: #FF0000;
         background: #fff; /* Arka plan beyaz kalır, before dolgusu gelir */
         transform: scale(1.03);
     }
-
         .area-item:hover::before {
             left: 0;
         }
-
         .area-item:hover i, .area-item:hover span {
             color: #fff; /* Dolgu gelince yazı beyaz olsun */
         }
-
 .area-notice {
     text-align: center;
     margin-top: 30px;
     color: #777;
     font-size: 14px;
 }
-
 .area-btns {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
 }
-
     .area-btns .btn-call {
         display: inline-flex;
         align-items: center;
@@ -478,19 +414,16 @@ ul {
         box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
         transition: all 0.3s ease;
     }
-
         .area-btns .btn-call:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
             background-color: #2c3e50;
         }
-
 /* --- Hakkımızda Sayfası Genel Yapı --- */
 .about-zigzag-section {
     padding: 80px 0;
     background-color: #fff;
 }
-
 /* --- Başlık Alanı (Header Stamp) --- */
 .header-stamp .since {
     display: inline-block;
@@ -503,35 +436,29 @@ ul {
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
-
 .header-stamp h1 {
     font-size: 38px;
     color: #333;
     line-height: 1.2;
     margin-bottom: 15px;
 }
-
 .header-stamp .subtitle {
     font-size: 18px;
     color: #666;
 }
-
 /* --- Zigzag Düzeni (Görsel ve Metin Dengesi) --- */
 .zigzag-item {
     display: flex;
     align-items: center;
-    gap: 100px; /* Metin ve resim arasındaki boşluk */
-    margin-bottom: 120px;
+    gap: 50px; 
+    margin-bottom: 80px;
 }
-
     .zigzag-item.alt {
         flex-direction: row-reverse;
     }
-
 .zigzag-content {
     flex: 1.4; /* Metne daha fazla alan ayırır */
 }
-
 .year-label {
     display: block;
     color: #FF0000;
@@ -540,27 +467,23 @@ ul {
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-
 .zigzag-content h3 {
     font-size: 30px;
     color: #2c3e50;
     margin-bottom: 20px;
 }
-
 .zigzag-content p {
     color: #555;
     line-height: 1.8;
     margin-bottom: 25px;
     font-size: 16px;
 }
-
 /* --- Özellik İkonları --- */
 .about-features {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
 }
-
 .f-item {
     font-weight: 600;
     font-size: 14px;
@@ -569,11 +492,9 @@ ul {
     align-items: center;
     gap: 10px;
 }
-
     .f-item i {
         color: #daa520;
     }
-
 .zigzag-image-wrapper {
     flex: 0.5; /* Resim alanını daraltır */
     position: relative;
@@ -581,7 +502,6 @@ ul {
     width: 100%;
     margin: 0 auto;
 }
-
 .zigzag-image-box {
     position: relative;
     z-index: 2;
@@ -589,18 +509,15 @@ ul {
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
-
     .zigzag-image-box img {
         width: 100%;
         height: auto;
         display: block;
         transition: transform 0.5s ease;
     }
-
     .zigzag-image-box:hover img {
         transform: scale(1.05);
     }
-
 /* Dekoratif Bloklar */
 .image-deco-block {
     position: absolute;
@@ -612,33 +529,27 @@ ul {
     z-index: 1;
     border-radius: 15px;
 }
-
     .image-deco-block.red {
         background: #FF0000;
         opacity: 0.1;
     }
-
 /* --- İstatistik Barı --- */
 .stats-bar {
     background: #2c3e50;
     padding: 60px 0;
     color: #fff;
 }
-
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
 }
-
 .stat-card {
     border-right: 1px solid rgba(255,255,255,0.1);
 }
-
     .stat-card:last-child {
         border-right: none;
     }
-
 .stat-number {
     display: block;
     font-size: 42px;
@@ -646,7 +557,6 @@ ul {
     color: #FF0000;
     margin-bottom: 5px;
 }
-
 .stat-text {
     font-size: 13px;
     text-transform: uppercase;
@@ -659,7 +569,6 @@ ul {
     background: #fff;
     text-align: center;
 }
-
 .brand-title {
     font-size: 26px;
     color: #2c3e50;
@@ -688,6 +597,7 @@ ul {
 .service-flex {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
 }
@@ -709,6 +619,7 @@ ul {
 .service-text {
     flex: 1;
     min-width: 300px;
+    max-width: 600px;
 }
     .service-text h2 {
         font-size: 28px;
@@ -719,30 +630,25 @@ ul {
     list-style: none;
     padding: 20px 0;
 }
-
     .service-features li {
         margin-bottom: 12px;
         font-size: 1.1rem;
         color: #444;
     }
-
     .service-features i {
         color: #c0392b; /* Senin kırmızı tonun */
         margin-right: 10px;
         font-size: 18px;
     }
-
 .service-item {
     display: flex;
     align-items: center;
     gap: 50px;
     margin-bottom: 80px;
 }
-
     .service-item.reverse {
         flex-direction: row-reverse;
     }
-
 .service-img {
     flex: 1;
     background: #fff;
@@ -754,7 +660,6 @@ ul {
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     border: 1px solid #eee;
 }
-
     .service-img i {
         font-size: 100px;
         color: #c0392b;
@@ -764,11 +669,9 @@ ul {
     line-height: 1.7;
     margin-bottom: 25px;
 }
-
 .service-desc {
     flex: 1.5;
 }
-
     .service-desc h3 {
         font-size: 28px;
         color: #2c3e50;
@@ -776,7 +679,6 @@ ul {
         position: relative;
         padding-bottom: 10px;
     }
-
         .service-desc h3::after {
             content: '';
             position: absolute;
@@ -786,25 +688,21 @@ ul {
             height: 3px;
             background: #c0392b;
         }
-
     .service-desc p {
         line-height: 1.8;
         color: #555;
         margin-bottom: 20px;
     }
-
     .service-desc ul {
         list-style: none;
         padding: 0;
         margin-bottom: 30px;
     }
-
         .service-desc ul li {
             margin-bottom: 10px;
             font-weight: 500;
             color: #333;
         }
-
             .service-desc ul li i {
                 color: #27ae60;
                 margin-right: 10px;
@@ -812,7 +710,6 @@ ul {
 .service-img i.fa-dumpster-fire {
     color: var(--primary-red);
 }
-
 /* Butonlar */
 .service-btn {
     display: inline-block;
@@ -824,15 +721,12 @@ ul {
     font-weight: 600;
     transition: 0.3s;
 }
-
     .service-btn:hover {
         background: #2c3e50;
     }
-
 .wa-btn {
     background: #25d366;
 }
-
     .wa-btn:hover {
         background: #128c7e;
     }
@@ -847,30 +741,25 @@ ul {
         margin-bottom: 20px;
         margin-top: 5px;
 }
-
 .faq-wrapper {
     max-width: 800px;
     margin: 0 auto;
 }
-
 .faq-item {
     margin-bottom: 25px;
     border-bottom: 1px solid #eee;
     padding-bottom: 15px;
 }
-
     .faq-item h4 {
         color: #2c3e50;
         margin-bottom: 10px;
         font-size: 18px;
     }
-
     .faq-item p {
         color: #666;
         font-size: 15px;
         line-height: 1.6;
     }
-
 .savings-banner {
     background: #27ae60;
     color: #fff;
@@ -879,17 +768,14 @@ ul {
     border-radius: 20px;
     margin: 40px 0;
 }
-
 .savings-content i {
     font-size: 50px;
     margin-bottom: 15px;
 }
-
 .savings-content h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
-
 .savings-btn {
     background: #fff;
     color: #27ae60;
@@ -905,24 +791,20 @@ ul {
     --white: #ffffff;
     --transition: all 0.3s ease;
 }
-
 /* Ana Konteyner Ayarı */
 .page-urunler {
     padding-top: 40px;
     background-color: var(--light-gray);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 /* Bölüm Başlıkları ve Alt Metinler */
 .product-group {
     padding: 60px 0;
     border-bottom: 1px dotted #ddd;
 }
-
     .product-group:last-child {
         border-bottom: none;
     }
-
 .section-title {
     color: var(--dark-navy);
     font-size: 2rem;
@@ -930,14 +812,12 @@ ul {
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-
 .section-subtitle {
     text-align: center;
     color: #666;
     margin-bottom: 40px;
     font-size: 1.1rem;
 }
-
 /* Ürün Grid Yapısı (Yan yana dizilim) */
 .product-grid {
     display: grid;
@@ -945,7 +825,6 @@ ul {
     gap: 30px;
     padding: 20px 0;
 }
-
 /* Ürün Kartı Tasarımı */
 .product-card {
     background: var(--white);
@@ -957,12 +836,10 @@ ul {
     display: flex;
     flex-direction: column;
 }
-
     .product-card:hover {
         transform: translateY(-10px);
         box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
-
 /* Ürün Görseli */
 .product-image {
     width: 100%;
@@ -974,18 +851,15 @@ ul {
     padding: 20px;
     border-bottom: 1px solid #f0f0f0;
 }
-
     .product-image img {
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
         transition: var(--transition);
     }
-
 .product-card:hover .product-image img {
     transform: scale(1.05);
 }
-
 /* Ürün Bilgileri */
 .product-info {
     padding: 25px;
@@ -993,7 +867,6 @@ ul {
     display: flex;
     flex-direction: column;
 }
-
     .product-info h3 {
         color: var(--dark-navy);
         font-size: 1.3rem;
@@ -1001,32 +874,27 @@ ul {
         border-left: 4px solid var(--primary-red);
         padding-left: 10px;
     }
-
 .product-specs {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
     .product-specs li {
         font-size: 0.95rem;
         color: #555;
         margin-bottom: 8px;
         line-height: 1.4;
     }
-
 /* Teknik Detay Butonu */
 .tech-link-item {
     margin-top: auto;
     padding-top: 15px;
 }
-
     .tech-link-item hr {
         border: 0;
         border-top: 1px solid #eee;
         margin-bottom: 15px;
     }
-
 .tech-btn {
     display: inline-block;
     color: var(--primary-red);
@@ -1035,17 +903,14 @@ ul {
     font-size: 0.9rem;
     transition: var(--transition);
 }
-
     .tech-btn:hover {
         color: var(--dark-navy);
         padding-left: 5px;
     }
 /* --- LOKASYON SAYFASI ÖZEL STİLLERİ --- */
-
 .location-page {
     background-color: #fdfdfd;
 }
-
 /* 1. Hero Bölümü - Genel Ayarlar */
 .aliaga-hero, .menemen-hero, .foca-hero {
     background-size: cover !important;      /* Resmin alanı kaplamasını sağlar */
@@ -1059,15 +924,13 @@ ul {
     text-align: center;
     padding: 80px 0;
 }
-
 /* Yazıların Sıkışmasını Engelleyen Genişlik Ayarı */
 .location-hero .hero-content {
-    max-width: 1150px; /* 800px yerine 1150px yaparak metni yaydık */
+    max-width: 850px; 
     margin: 0 auto;
     padding: 0 30px;
     width: 100%;
 }
-
 .location-hero h1 {
     font-size: 3.5rem; 
     margin-bottom: 20px;
@@ -1075,7 +938,6 @@ ul {
     font-weight: 800;
     text-shadow: 2px 2px 10px rgba(0,0,0,0.5); /* Okunabilirliği artırır */
 }
-
 .location-hero p {
     font-size: 1.35rem; 
     margin-bottom: 35px;
@@ -1084,7 +946,6 @@ ul {
     margin-left: auto;
     margin-right: auto;
 }
-
 .call-btn {
     display: inline-block;
     background-color: #FF0000;
@@ -1097,13 +958,11 @@ ul {
     box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
     transition: transform 0.3s ease, background 0.3s ease;
 }
-
 .call-btn:hover {
     transform: translateY(-5px);
     background-color: #2c3e50;
     box-shadow: 0 15px 25px rgba(0,0,0,0.2);
 }
-
 /* 2. Özellik Kartları (Features) */
 .location-features {
     display: grid;
@@ -1112,7 +971,6 @@ ul {
     padding: 60px 10% 40px;
     margin-top: -50px; /* Hero'nun üzerine hafif binmesi için */
 }
-
 .feature-card {
     background: white;
     padding: 35px;
@@ -1122,50 +980,42 @@ ul {
     border-top: 5px solid #FF0000;
     transition: 0.3s ease;
 }
-
 .feature-card:hover {
     transform: translateY(-10px);
 }
-
 .feature-card h3 {
     color: #2c3e50;
     margin-bottom: 15px;
     font-size: 1.4rem;
 }
-
 .feature-card p {
     color: #666;
     line-height: 1.5;
 }
-
 /* 3. Metin İçeriği ve Mahalleler */
 .location-text-content {
-    max-width: 1000px;
+    max-width: 850px;
     margin: 60px auto;
     padding: 0 20px;
     text-align: center;
 }
-
 .location-text-content h2 {
     font-size: 2.2rem;
     color: #2c3e50;
     margin-bottom: 25px;
 }
-
 .location-text-content p {
     color: #555;
     line-height: 1.8;
     font-size: 1.1rem;
     margin-bottom: 40px;
 }
-
 .neighborhoods {
     background: #f4f4f4;
     padding: 40px;
     border-radius: 20px;
     text-align: left;
 }
-
 .neighborhoods h4 {
     font-size: 1.5rem;
     color: #FF0000;
@@ -1173,7 +1023,6 @@ ul {
     border-bottom: 2px solid #ddd;
     padding-bottom: 10px;
 }
-
 .neighborhoods ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1181,7 +1030,6 @@ ul {
     list-style: none;
     padding: 0;
 }
-
 .neighborhoods ul li {
     background: white;
     padding: 10px 15px;
@@ -1197,7 +1045,6 @@ ul {
     background-color: #ffffff;
     text-align: center;
 }
-
 .error-codes-location .section-title {
     font-size: 2rem;
     color: #2c3e50;
@@ -1205,7 +1052,6 @@ ul {
     font-weight: 800;
     text-transform: uppercase;
 }
-
 .error-codes-location .section-subtitle {
     font-size: 1.1rem;
     color: #666;
@@ -1215,7 +1061,6 @@ ul {
     margin-right: auto;
     line-height: 1.5;
 }
-
 /* Bilgilendirme Notu (Quick Help Note) */
 .quick-help-note {
     margin-top: 25px;
@@ -1225,18 +1070,15 @@ ul {
     display: inline-block;
     border-radius: 4px;
 }
-
 .quick-help-note p {
     margin: 0;
     font-size: 0.95rem;
     color: #444;
 }
-
 .quick-help-note i {
     color: #FF0000;
     margin-right: 8px;
 }
-
 /* --- Footer Stilleri --- */
 .main-footer {
     background: #2c3e50;
@@ -1244,37 +1086,31 @@ ul {
     padding: 60px 0 0 0;
     margin-top: 50px;
 }
-
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
     padding-bottom: 40px;
 }
-
 .footer-logo {
     font-size: 24px;
     margin-bottom: 20px;
     color: #FFF;
 }
-
     .footer-logo strong {
         color: #FFF;
     }
-
 .footer-col p {
     line-height: 1.6;
     font-size: 14px;
     color: #bdc3c7;
 }
-
 .footer-col h4 {
     font-size: 18px;
     margin-bottom: 25px;
     position: relative;
     padding-bottom: 10px;
 }
-
     .footer-col h4::after {
         content: '';
         position: absolute;
@@ -1284,21 +1120,17 @@ ul {
         height: 2px;
         background: #FF0000; /* Turuncu çizgi kırmızı oldu */
     }
-
 .footer-col ul li {
     margin-bottom: 12px;
 }
-
     .footer-col ul li a {
         color: #bdc3c7;
         transition: 0.3s;
     }
-
         .footer-col ul li a:hover {
             color: #FF0000; /* Hover turuncu yerine kırmızı oldu */
             padding-left: 5px;
         }
-
 .contact-item {
     display: flex;
     align-items: center;
@@ -1306,7 +1138,6 @@ ul {
     margin-bottom: 15px;
     font-size: 14px;
 }
-
     .contact-item i {
         color: #FF0000;
         font-size: 16px;
@@ -1317,17 +1148,14 @@ ul {
         color: inherit;
         transition: 0.3s;
     }
-
         .contact-item span a:hover {
             color: #FF0000;
         }
-
 .footer-social {
     margin-top: 20px;
     display: flex;
     gap: 15px;
 }
-
     .footer-social a {
         width: 35px;
         height: 35px;
@@ -1339,11 +1167,9 @@ ul {
         color: #fff;
         transition: 0.3s;
     }
-
         .footer-social a:hover {
             background: #FF0000;
         }
-
 .footer-bottom {
     background: #1a252f;
     padding: 20px 0;
@@ -1351,11 +1177,9 @@ ul {
     font-size: 13px;
     border-top: 1px solid #3e4f5f;
 }
-
 /* ============================================================
    MOBİL UYUMLULUK VE YAPI (max-width: 768px)
    ============================================================ */
-
 @media (max-width: 768px) {
     /* 1. Hamburger İkonu */
     .mobile-toggle {
@@ -1385,7 +1209,6 @@ ul {
         height: 70px;
         padding: 0 15px;
     }
-
     .nav-menu {
         display: none; /* JS ile active olana kadar gizli */
         flex-direction: column;
@@ -1398,48 +1221,40 @@ ul {
         box-shadow: 0 10px 15px rgba(0,0,0,0.1);
         padding: 20px 0;
     }
-
         /* JavaScript tıklandığında menüyü içeri sürükler */
         .nav-menu.active {
             display: flex !important;
         }
-
         .nav-menu li {
             width: 100%;
             text-align: center;
             margin: 10px 0;
         }
-
             .nav-menu li a {
                 display: block;
                 padding: 12px;
                 font-size: 18px;
                 border-bottom: 1px solid #f5f5f5;
             }
-
     /* 3. Hero Alanı Düzenleme */
     .hero {
         height: 50vh; /* Mobilde biraz daha kısa tutalım */
         padding-top: 20px;
     }
-
     .hero-content h1 {
         font-size: 28px !important;
         line-height: 1.2;
     }
-
     /* 4. Grid ve Flex Yapıları (Hizmetler ve Zigzag) */
     .service-grid, .product-grid, .reviews-grid, .areas-grid, .stats-grid {
         grid-template-columns: 1fr !important; /* Her şey alt alta */
         gap: 25px;
     }
-
     .zigzag-item, .zigzag-item.alt, .service-item, .service-item.reverse, .service-flex {
         flex-direction: column !important;
         gap: 30px !important;
         text-align: center;
     }
-
     /* 5. Görsel Boyutlandırmalar */
     .zigzag-image-wrapper, .service-image, .service-img {
         width: 100% !important;
@@ -1447,31 +1262,25 @@ ul {
         height: auto !important;
         flex: none !important;
     }
-
     .service-image {
         height: 300px !important; /* Detay sayfasındaki kare görseller için */
     }
-
     .service-img {
         height: 150px !important; /* İkonlu kutular için */
     }
-
     /* 6. Listeler ve Yazı Ayarları */
     .service-desc h3::after {
         left: 50%;
         transform: translateX(-50%);
     }
-
     .service-features, .service-desc ul {
         display: inline-block;
         text-align: left;
     }
-
     /* 7. İstatistik Barı Özel (2'li görünüm mobilde daha şık durur) */
     .stats-grid {
         grid-template-columns: repeat(2, 1fr) !important;
     }
-
     .stat-card {
         border-right: none;
         border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -1479,12 +1288,10 @@ ul {
     }
 .location-hero h1 {
         font-size: 1.8rem;
-    }
-    
+    }    
     .location-hero p {
         font-size: 1rem;
-    }
-    
+    }    
     .call-btn {
         padding: 11px 20px;
         font-size: 1rem;
@@ -1495,12 +1302,10 @@ ul {
         font-size: 0.9rem !important;    
         letter-spacing: -0.5px;        
     }
-
     .location-features {
         padding: 40px 20px;
         margin-top: 0;
     }
-
     .neighborhoods ul {
         grid-template-columns: 1fr;
     }
@@ -1512,13 +1317,11 @@ ul {
 .error-codes-location .section-title {
         font-size: 1.6rem;
         padding: 0 15px;
-    }
-    
+    }    
     .error-codes-location .section-subtitle {
         font-size: 1rem;
         padding: 0 20px;
     }
-
     .quick-help-note {
         margin: 20px 15px 0 15px;
         display: block; /* Mobilde tam genişlik kaplasın */
@@ -1544,8 +1347,6 @@ ul {
         background-image: linear-gradient(rgba(44, 62, 80, 0.4), rgba(44, 62, 80, 0.6)), url('../../img/foca-mobil.webp');
     }
 }
-
-
 /* Masaüstünde butonu gizle */
 @media (min-width: 769px) {
     .nav-menu {
@@ -1558,11 +1359,9 @@ ul {
         padding: 0 !important;
         background: transparent !important;
     }
-
     .mobile-toggle {
         display: none !important; /* Masaüstünde hamburgeri gizle */
-    }
-    
+    }    
     .aliaga-hero {
         background: linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.5)), url('../../img/warnemunde-8079731.jpg') no-repeat center/cover !important;     
     }
