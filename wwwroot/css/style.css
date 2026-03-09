@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
 }
 body {
@@ -10,9 +10,10 @@ body {
     width: 100%;
 }
 .container {
-    max-width: 1200px;
-    margin: auto ;
+    max-width: 1320px;
+    margin: 0 auto ;
     width: 100%;
+    padding: 0 20px;
 }
 a {
     text-decoration: none;
@@ -86,10 +87,24 @@ ul {
 }
 .nav-wrapper {
     display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    width: 100%;
+    list-style: none;
+    margin-left: auto; 
+    gap: 30px;
 }
+    .nav-menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    gap: 15px;
+}
+    .nav-menu li a {
+        padding: 5px 10px;
+        color: #333;
+        font-weight: 500;
+    }
+        .nav-menu li a:hover {
+            color: #2c3e50; /* Hover turuncu yerine koyu gri yapıldı */
+        }
 .logo a {
     display: flex;
     align-items: center;
@@ -103,20 +118,7 @@ ul {
     object-fit: contain;
     transition: transform 0.3s ease;
 }
-.nav-menu {
-    display: flex;
-    list-style: none;
-    margin-left: auto;
-    gap: 20px;
-}
-    .nav-menu li a {
-        padding: 10px 15px;
-        color: #333;
-        font-weight: 500;
-    }
-        .nav-menu li a:hover {
-            color: #2c3e50; /* Hover turuncu yerine koyu gri yapıldı */
-        }
+
 .mobile-toggle {
     display: none; /* Varsayılan olarak hiçbir yerde görünmesin */
     cursor: pointer;
