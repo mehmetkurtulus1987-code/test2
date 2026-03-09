@@ -1483,8 +1483,14 @@ ul {
     }
     
     .call-btn {
-        padding: 15px 25px;
+        padding: 11px 20px;
         font-size: 1rem;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .page-location-menemen .call-btn {
+        font-size: 0.9rem !important;    
+        letter-spacing: -0.5px;        
     }
 
     .location-features {
