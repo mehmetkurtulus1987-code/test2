@@ -1047,13 +1047,18 @@ ul {
 }
 
 /* 1. Hero Bölümü */
-.location-hero {
+.aliaga-hero {
     background: linear-gradient(rgba(44, 62, 80, 0.2), rgba(44, 62, 80, 0.2)), url('../../img/warnemunde-8079731.jpg'); 
     background-size: cover;
     background-position: center;
     padding: 100px 0;
     color: white;
     text-align: center;
+}
+.menemen-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.3)), url('../../img/menemen.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .location-hero .hero-content {
