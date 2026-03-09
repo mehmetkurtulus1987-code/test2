@@ -1051,18 +1051,17 @@ ul {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;    
-    /* Masaüstü için yükseklik ayarı */
-    min-height: 70vh; /* Ekran yüksekliğinin %70'ini kapla */
-    display: flex; /* İçeriği ortalamak için */
-    align-items: center; /* Yazıları dikeyde ortalar */
-    justify-content: center; /* Yazıları yatayda ortalar */    
+    min-height: 50vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;    
     color: white;
     text-align: center;
-    padding: 60px 0;
+    padding: 80px 0; 
 }
 
 .location-hero .hero-content {
-    max-width: 800px;
+    max-width: 1000px; 
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -1070,13 +1069,16 @@ ul {
 .location-hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    text-transform: uppercase;
+    text-transform: uppercase;    
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .location-hero p {
-    font-size: 1.2rem;
+    font-size: 1.25rem; 
     margin-bottom: 35px;
-    line-height: 1.6;
+    line-height: 1.7; 
 }
 
 .call-btn {
