@@ -10,7 +10,7 @@ body {
     width: 100%;
 }
 .container {
-    max-width: 1100px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 20px;
     width: 100%;
@@ -87,8 +87,9 @@ ul {
 }
 .nav-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
+    width: 100%;
 }
 .logo a {
     display: flex;
@@ -104,7 +105,9 @@ ul {
     transition: transform 0.3s ease;
 }
 .nav-menu {
+    display: flex;
     list-style: none;
+    margin-left: auto;
     gap: 20px;
 }
     .nav-menu li a {
