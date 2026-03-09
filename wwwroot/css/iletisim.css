@@ -168,8 +168,16 @@ input, select, textarea {
     .contact-main {
         padding: 40px 0;
     }
+    .contact-wrapper, .contact-container {
+        display: flex !important;
+        flex-direction: column !important; /* Yan yana duran elemanları alt alta dizer */
+        gap: 30px;
+    }
 
     /* 2. Başlık Boyutu */
+    .contact-info {
+        order: 1; /* İlk sırada adres bilgileri */
+    }
     .contact-info h2 {
         font-size: 1.8rem;
         margin-bottom: 15px;
@@ -192,10 +200,14 @@ input, select, textarea {
         }
 
     /* 4. İletişim Formu Kartı */
+    .contact-info, .contact-form-card {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
     .contact-form-card {
-        padding: 25px 20px;
-        margin-top: 20px;
-        border-radius: 15px;
+        order: 2;
+        margin-top: 0;
+        
     }
 
     .form-row {

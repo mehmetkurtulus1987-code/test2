@@ -79,6 +79,112 @@
     margin-top: 15px;
     font-weight: bold;
 }
+.blog-details {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9; /* Hafif gri arka plan ile ana karttan ayırdık */
+    border-left: 4px solid #e74c3c; /* Sol tarafa kırmızı bir vurgu çizgisi */
+    border-radius: 5px;
+    font-size: 14px;
+    color: #444;
+    animation: slideDown 0.3s ease-out;
+}
+
+/* Açılış animasyonu (daha yumuşak bir geçiş için) */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.blog-details h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+    /* Başlığın yanına otomatik bir ikon ekleyelim (Opsiyonel) */
+    .blog-details h4::before {
+        content: '🔍';
+        font-size: 14px;
+    }
+
+.blog-details ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+.blog-details li {
+    list-style: none;
+    position: relative;
+    margin-bottom: 8px;
+    padding-left: 5px;
+}
+
+    /* Liste maddelerinin başına küçük oklar ekleyelim */
+    .blog-details li::before {
+        content: '→';
+        color: #e74c3c;
+        position: absolute;
+        left: -15px;
+        font-weight: bold;
+    }
+
+.read-more-btn {
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    color: #e74c3c;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: fit-content;
+    transition: 0.3s;
+}
+
+    .read-more-btn:hover {
+        background: #e74c3c;
+        color: #fff;
+    }
+.blog-meta {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #888;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+    .blog-meta i {
+        color: #e74c3c; /* İkonlar kurumsal renginde olsun */
+        margin-right: 4px;
+    }
+.share-wa {
+    color: #25D366; /* WhatsApp yeşili */
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.3s;
+}
+
+    .share-wa:hover {
+        color: #128C7E; /* Hoverda koyu yeşil */
+        transform: scale(1.05);
+    }
 /* ============================================================
    BLOG MOBİL UYUMLULUK (max-width: 768px)
    ============================================================ */
@@ -176,5 +282,37 @@
         .menu-toggle {
             display: none;
         }
+    }
+    /* 7. Yeni Eklenen Meta Bilgileri (Tarih ve Saat) */
+    .blog-meta {
+        justify-content: center; /* Mobilde tarih ve okuma süresini ortala */
+        margin-bottom: 10px;
+    }
+
+    /* 8. Açılır Detay Alanı Düzenlemesi */
+    .blog-details {
+        text-align: left; /* Okunaklı olması için liste içeriğini sola yaslı bırak */
+        padding: 15px;
+        font-size: 13px;
+    }
+
+    /* 9. Alt Butonlar (Detay Gör ve Paylaş) Konumu */
+    .blog-actions {
+        flex-direction: column; /* Butonları alt alta diz (Sıkışmayı önler) */
+        gap: 15px;
+        width: 100%;
+    }
+
+    .read-more-btn {
+        width: 100%; /* Mobilde daha kolay tıklanması için tam genişlik */
+        text-align: center;
+        padding: 12px;
+        border: 1px solid #e74c3c; /* Daha belirgin olsun */
+    }
+
+    .share-wa {
+        justify-content: center; /* WhatsApp ikonunu ortala */
+        width: 100%;
+        padding: 5px;
     }
 }

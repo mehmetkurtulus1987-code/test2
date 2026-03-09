@@ -212,3 +212,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+        //BLOG SAYFASI İÇİN DETAYLARI GÖSTER/GİZLE
+document.querySelectorAll('.read-more-btn').forEach(button => {
+    button.addEventListener('click', function () {
+        const details = this.previousElementSibling;
+        const isOpen = details.style.display === "block";
+        details.style.display = isOpen ? "none" : "block";
+        this.textContent = isOpen ? "Detayları Gör ↓" : "Kapat ↑";
+    });
+});
