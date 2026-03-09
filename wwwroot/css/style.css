@@ -1046,37 +1046,43 @@ ul {
     background-color: #fdfdfd;
 }
 
-/* 1. Hero Bölümü */
+/* 1. Hero Bölümü - Genel Ayarlar */
 .aliaga-hero, .menemen-hero, .foca-hero {
-    background-size: cover;      
-    background-position: center;  
-    background-repeat: no-repeat;   
-    min-height: 60vh; 
+    background-size: cover !important;      /* Resmin alanı kaplamasını sağlar */
+    background-position: center !important;  /* Resmi ortalar */
+    background-repeat: no-repeat !important; /* RESİM TEKRARINI ENGELLER */
+    min-height: 55vh;  /* Devasa görüntüyü 55'e çektik, daha dengeli */
     display: flex; 
     align-items: center; 
     justify-content: center;    
     color: white;
     text-align: center;
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
+/* Yazıların Sıkışmasını Engelleyen Genişlik Ayarı */
 .location-hero .hero-content {
-    max-width: 1100px; 
+    max-width: 1150px; /* 800px yerine 1150px yaparak metni yaydık */
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
+    width: 100%;
 }
 
 .location-hero h1 {
-    font-size: 3.2rem; 
+    font-size: 3.5rem; 
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 800;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); /* Okunabilirliği artırır */
 }
 
 .location-hero p {
-    font-size: 1.3rem; 
+    font-size: 1.35rem; 
     margin-bottom: 35px;
-    line-height: 1.7;
+    line-height: 1.8;
+    max-width: 900px; /* Paragrafın çok aşırı yayılmaması için */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .call-btn {
@@ -1519,8 +1525,14 @@ ul {
         text-align: left;
     }
     .aliaga-hero, .menemen-hero, .foca-hero {
-        min-height: 40vh;
-        padding: 40px 20px;
+        min-height: 45vh; /* Mobilde biraz daha küçük kalsın */
+        padding: 50px 20px;
+    }
+    .location-hero h1 {
+        font-size: 2rem !important;
+    }
+    .location-hero p {
+        font-size: 1.1rem !important;
     }
     .aliaga-hero {
         background-image: linear-gradient(rgba(44, 62, 80, 0.4), rgba(44, 62, 80, 0.6)), url('../../img/aliaga-mobil.jpg');
@@ -1552,12 +1564,12 @@ ul {
     }
     
     .aliaga-hero {
-    background: linear-gradient(rgba(44, 62, 80, 0.2), rgba(44, 62, 80, 0.4)), url('../../img/warnemunde-8079731.jpg');     
+        background: linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.5)), url('../../img/warnemunde-8079731.jpg') no-repeat center/cover !important;     
     }
     .menemen-hero {
-    background: linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.4)), url('../../img/su-ucuran-selalesi.jpg');    
+        background: linear-gradient(rgba(44, 62, 80, 0.4), rgba(44, 62, 80, 0.5)), url('../../img/su-ucuran-selalesi.jpg') no-repeat center/cover !important;    
     }
     .foca-hero {
-    background: linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.3)), url('../../img/foca-bg.webp');    
+        background: linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.4)), url('../../img/foca-bg.webp') no-repeat center/cover !important;    
     }
 }
