@@ -1063,6 +1063,11 @@ ul {
     color: white;
     text-align: center;
 }
+.foca-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.3)), url('../../img/foca-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
 .location-hero .hero-content {
     max-width: 800px;
@@ -1502,6 +1507,10 @@ ul {
         grid-template-columns: 1fr;
     }
 /* LOKASYON SAYFALARI MOBIL */
+.page-location-foca .call-btn {
+        font-size: 1rem !important;
+        letter-spacing: -0.5px;
+    }
 .error-codes-location .section-title {
         font-size: 1.6rem;
         padding: 0 15px;
