@@ -22,8 +22,6 @@
     width: auto;
     transition: 0.3s ease;
 }
-/* Alt Model Navigasyonu (Condense, Ruby, Epsilon) */
-
 .model-selection-wrapper {
     display: flex;
     justify-content: center;
@@ -31,7 +29,6 @@
     margin: 30px 0;
     flex-wrap: wrap;
 }
-
 .model-link {
     padding: 12px 25px;
     background-color: #f8f9fa;
@@ -44,14 +41,12 @@
     transition: all 0.3s ease;
     display: inline-block;
 }
-
     .model-link:hover {
         background-color: var(--dark-navy);
         color: #fff;
         border-color: var(--dark-navy);
         transform: translateY(-2px);
     }
-/* Her Modelin Kendi Başlık Alanı */
 .model-section h3 {
     background-color: var(--dark-navy);
     color: #fff;
@@ -63,23 +58,20 @@
     align-items: center;
     gap: 10px;
 }
-
     .model-section h3::before {
-        content: "\f105"; /* FontAwesome ok işareti */
+        content: "\f105"; 
         font-family: "Font Awesome 6 Free";
         font-weight: 900;
     }
-/* Çapa linki ile gidilen başlıkların header altında kalmasını önler */
 #dogalgaz, #elektrik, #kazan {
-    scroll-margin-top: 100px; /* Header yüksekliğine göre bu değeri (80px-120px) ayarlayabilirsin */
+    scroll-margin-top: 100px; 
 }
 #dogalgaz, #elektrik, #kazan,
 #model-condense, #model-ruby, #model-epsilon {
     scroll-margin-top: 110px;
 }
-/* Ana Kategori Başlıkları (Doğalgaz, Elektrik, Kazan) */
 .brand-nav {
-    margin-top: 20px; /* Bu değeri artırarak mesafeyi daha da açabilirsiniz */
+    margin-top: 20px; 
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -91,7 +83,6 @@
     text-align: center;
     position: relative;
 }
-
     .section-title-wrapper h2 {
         font-size: 2.2rem;
         color: var(--dark-navy);
@@ -102,9 +93,7 @@
         z-index: 2;
         text-transform: uppercase;
         letter-spacing: 1px;
-    }
-
-    /* Başlığın arkasındaki şık çizgi */
+    }    
     .section-title-wrapper::before {
         content: "";
         position: absolute;
@@ -115,19 +104,15 @@
         background: linear-gradient(to right, transparent, var(--primary-red), transparent);
         z-index: 1;
     }
-
     .section-title-wrapper i {
         color: var(--primary-red);
         margin-right: 15px;
-    }
-
-    /* Alt açıklama yazısı */
+    }    
     .section-title-wrapper p {
         margin-top: 10px;
         color: #666;
         font-weight: 500;
     }
-/* Arıza Kartları Sayfa Tasarımı */
 .error-hero {
     padding: 80px 0;
     background: #2c3e50;
@@ -136,15 +121,12 @@
     margin-bottom: 50px;
 }
 .error-hero .highlight { color: #e74c3c; }
-
 .error-cards-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
     padding-bottom: 60px;
 }
-
-/* SENİN KART YAPIN */
 .error-card {
     background: white;
     padding: 30px;
@@ -152,7 +134,6 @@
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     border: 1px solid #eee;
 }
-
 .error-code {
     display: inline-block;
     background: #e74c3c;
@@ -162,7 +143,6 @@
     font-weight: 800;
     margin-bottom: 10px;
 }
-
 .error-title {
     display: block;
     font-size: 18px;
@@ -170,7 +150,6 @@
     color: #2c3e50;
     margin-bottom: 15px;
 }
-
 .solution-box {
     margin-top: 15px;
     padding: 15px;
@@ -178,9 +157,6 @@
     border-left: 4px solid #e74c3c;
     font-size: 14px;
 }
-
-/* PDF VE ÇAĞRI BUTONLARI */
-/* --- CTA (Hemen Ara) Bölümü --- */
 .cta-section {
     background: linear-gradient(135deg, #2c3e50 0%, #c0392b 100%);
     color: #fff;
@@ -190,19 +166,16 @@
     margin: 50px 0;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
-
     .cta-section h2 {
         font-size: 28px;
         margin-bottom: 15px;
         font-weight: 700;
     }
-
     .cta-section p {
         font-size: 18px;
         margin-bottom: 25px;
         opacity: 0.9;
     }
-
 .cta-btn {
     display: inline-block;
     background-color: #fff;
@@ -215,15 +188,12 @@
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-
     .cta-btn:hover {
         transform: translateY(-3px);
         box-shadow: 0 8px 20px rgba(0,0,0,0.3);
         background-color: #f8f9fa;
         color: #e74c3c;
     }
-
-/* --- Kılavuz Dosyaları Bölümü --- */
 .kilavuz-box {
     background: #f9f9f9;
     border: 1px solid #eee;
@@ -231,7 +201,6 @@
     padding: 30px;
     margin-top: 40px;
 }
-
 .kilavuz-header {
     display: flex;
     align-items: center;
@@ -240,30 +209,25 @@
     border-bottom: 2px solid #fff;
     padding-bottom: 15px;
 }
-
 .kilavuz-icon i {
     font-size: 45px;
     color: #e74c3c;
 }
-
 .kilavuz-text h4 {
     font-size: 20px;
     color: #2c3e50;
     margin-bottom: 5px;
 }
-
 .kilavuz-text p {
     color: #666;
     margin: 0;
     font-size: 15px;
 }
-
 .kilavuz-links {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
 }
-
 .kilavuz-download-btn {
     flex: 1;
     min-width: 200px;
@@ -280,42 +244,34 @@
     transition: all 0.3s ease;
     text-align: center;
 }
-
     .kilavuz-download-btn:hover {
         background: #2c3e50;
         color: #fff;
     }
-
 /* Mobil Uyumluluk */
 @media (max-width: 768px) {
     .cta-section {
         padding: 30px 20px;
     }
-
         .cta-section h2 {
             font-size: 22px;
         }
-
     .kilavuz-header {
         flex-direction: column;
         text-align: center;
     }
-
     .kilavuz-links {
         flex-direction: column;
     }
-
     .model-selection-wrapper {
         gap: 10px;
     }
-
     .section-title-wrapper h2 {
         font-size: 1.5rem;
         padding: 5px 15px;
     }
-
     .model-link {
-        flex: 1 1 45%; /* Yan yana ikişerli dizilmeleri için */
+        flex: 1 1 45%; 
         text-align: center;
         padding: 10px;
         font-size: 13px;
@@ -324,115 +280,89 @@
    HATA KODLARI SAYFASI MOBİL UYUMLULUK (max-width: 768px)
    ============================================================ */
 
-    @media (max-width: 768px) {
-        /* 1. Kahraman (Hero) Alanı Ayarı */
+    @media (max-width: 768px) {        
         .error-hero {
             padding: 50px 0;
             margin-bottom: 30px;
         }
-
             .error-hero h1 {
                 font-size: 24px;
                 padding: 0 15px;
             }
-
         /* 2. Model ve Kategori Navigasyonu */
         .brand-nav, .model-selection-wrapper {
             gap: 8px;
             padding: 0 10px;
         }
-
         .model-link {
-            flex: 1 1 calc(50% - 10px); /* Yan yana tam ikişerli dizilim */
+            flex: 1 1 calc(50% - 10px); 
             padding: 10px 5px;
             font-size: 13px;
         }
-
-        /* 3. Bölüm Başlıkları (Scroll Margin Ayarı) */
         .model-section h3 {
             font-size: 1.1rem;
             padding: 12px 15px;
             margin: 30px 0 15px 0;
-        }
-
-        /* Sticky header mobilde daha az yer kaplayabilir, scroll payını daraltalım */
+        }        
         #dogalgaz, #elektrik, #kazan,
         #model-condense, #model-ruby, #model-epsilon {
-            scroll-margin-top: 130px; /* Mobilde biraz daha fazla pay bırakmak gerekebilir */
-        }
-
-        /* 4. Arıza Kartları (Error Cards) */
+            scroll-margin-top: 130px; 
+        }        
         .error-cards-wrapper {
-            grid-template-columns: 1fr; /* Kartlar mobilde tek sütun */
+            grid-template-columns: 1fr; 
             gap: 20px;
             padding: 0 15px;
         }
-
         .error-card {
             padding: 20px;
         }
-
         .error-title {
             font-size: 16px;
-        }
-
-        /* 5. CTA (Hemen Ara) Bölümü */
+        }       
         .cta-section {
             padding: 30px 15px;
             margin: 30px 15px;
             border-radius: 10px;
         }
-
             .cta-section h2 {
                 font-size: 20px;
             }
-
             .cta-section p {
                 font-size: 15px;
             }
-
         .cta-btn {
-            width: 100%; /* Kolay tıklama için tam genişlik */
+            width: 100%; 
             padding: 15px 20px;
             font-size: 16px;
-        }
-
-        /* 6. Kullanım Kılavuzu (PDF) Kutusu */
+        }        
         .kilavuz-box {
             margin: 30px 15px;
             padding: 20px;
         }
-
         .kilavuz-header {
             flex-direction: column;
             text-align: center;
             gap: 10px;
         }
-
         .kilavuz-icon i {
             font-size: 35px;
         }
-
         .kilavuz-links {
-            flex-direction: column; /* Butonlar alt alta */
+            flex-direction: column; 
             gap: 10px;
         }
-
         .kilavuz-download-btn {
             width: 100%;
             font-size: 14px;
             padding: 12px;
-        }
-
-        /* 7. Başlık Çizgisi (Section Title Wrapper) */
+        }        
         .section-title-wrapper h2 {
             font-size: 1.4rem;
             padding: 8px 15px;
         }
     }
-
     .nav-menu {
-        display: none; /* Veya transform: translateX(100%); */
+        display: none; 
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -440,21 +370,17 @@
         width: 100%;
         background: #fff;
         z-index: 1000;
-    }
-
-        /* JavaScript tıklandığında bu sınıfı ekleyecek */
+    }        
         .nav-menu.active {
             display: flex;
         }
-
     .menu-toggle {
-        display: block; /* Sadece mobilde görünsün */
+        display: block; 
         font-size: 24px;
         background: none;
         border: none;
         cursor: pointer;
     }
-
     /* Masaüstünde butonu gizle */
     @media (min-width: 769px) {
         .menu-toggle {
