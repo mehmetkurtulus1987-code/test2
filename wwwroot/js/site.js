@@ -213,11 +213,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
         //BLOG SAYFASI İÇİN DETAYLARI GÖSTER/GİZLE
-document.querySelectorAll('.read-more-btn').forEach(button => {
-    button.addEventListener('click', function () {
-        const details = this.previousElementSibling;
-        const isOpen = details.style.display === "block";
-        details.style.display = isOpen ? "none" : "block";
-        this.textContent = isOpen ? "Detayları Gör ↓" : "Kapat ↑";
-    });
-});
+function toggleDetails(id, btn) {
+    const details = document.getElementById(id);
+    
+    // Mevcut durumun tam tersini yap
+    if (details.style.display === "block") {
+        details.style.display = "none";
+        btn.textContent = "Detayları Gör ↓";
+    } else {
+        details.style.display = "block";
+        btn.textContent = "Kapat ↑";
+    }
+}
