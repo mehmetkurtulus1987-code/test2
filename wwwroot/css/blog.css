@@ -81,6 +81,7 @@
 }
 .blog-details {
     display: none;
+    overflow: hidden;
     margin-top: 20px;
     padding: 15px;
     background: #f9f9f9; /* Hafif gri arka plan ile ana karttan ayırdık */
