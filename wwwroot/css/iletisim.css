@@ -1,15 +1,20 @@
-/* iletisim.css */
+/* ============================================================
+   GÜNERİ TEKNİK - İLETİŞİM CSS (GÜNCEL TAM DOSYA)
+   ============================================================ */
+
 :root {
     --primary-red: #c0392b;
     --dark-navy: #2c3e50;
     --light-bg: #f8f9fa;
 }
 
+/* 1. Genel Yapı */
 .contact-main {
     padding: 60px 0;
     background: var(--light-bg);
 }
 
+/* Ana Grid Sistemi */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -17,7 +22,7 @@
     align-items: start;
 }
 
-/* Sol Kolon */
+/* 2. Sol Kolon (Bilgiler) */
 .contact-info h2 {
     color: var(--dark-navy);
     font-size: 2.5rem;
@@ -39,63 +44,24 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
-    .info-card i {
-        font-size: 24px;
-        color: var(--primary-red);
-    }
-
-    .info-card h4 {
-        font-size: 0.9rem;
-        color: #777;
-        margin-bottom: 5px;
-    }
-
-    .info-card a, .info-card p {
-        font-weight: 600;
-        color: var(--dark-navy);
-        text-decoration: none;
-    }
-
-/* Sağ Kolon - Form */
-#dynamicFields select {
-    margin-bottom: 15px;
-}
-.service-areas-grid {
-    display: grid !important; /* Flex yerine Grid daha dengeli durur */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 40px 20px !important;
-    background: #fff !important; /* Gri yerine beyaz daha ferah durur */
-    margin-top: 20px;
+.info-card i {
+    font-size: 24px;
+    color: var(--primary-red);
 }
 
-    .service-areas-grid div {
-        padding: 20px;
-        border-radius: 10px;
-        transition: 0.3s;
-        background: var(--light-bg);
-    }
+.info-card h4 {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 5px;
+}
 
-        .service-areas-grid div:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
+.info-card a, .info-card p {
+    font-weight: 600;
+    color: var(--dark-navy);
+    text-decoration: none;
+}
 
-    .service-areas-grid i {
-        font-size: 30px;
-        margin-bottom: 15px;
-        display: block;
-    }
-
-    .service-areas-grid h4 {
-        color: var(--dark-navy);
-        margin-bottom: 10px;
-    }
-
-    .service-areas-grid p {
-        font-size: 14px;
-        color: #666;
-    }
+/* 3. Sağ Kolon (Form Kartı) */
 .contact-form-card {
     background: #fff;
     padding: 40px;
@@ -118,11 +84,12 @@ input, select, textarea {
     font-size: 15px;
     outline: none;
     transition: 0.3s;
+    box-sizing: border-box; /* Taşmayı önleyen en kritik kod */
 }
 
-    input:focus, select:focus {
-        border-color: var(--dark-navy);
-    }
+input:focus, select:focus {
+    border-color: var(--dark-navy);
+}
 
 .btn-submit {
     width: 100%;
@@ -137,12 +104,35 @@ input, select, textarea {
     transition: 0.3s;
 }
 
-    .btn-submit:hover {
-        background: var(--primary-red);
-        transform: translateY(-3px);
-    }
+.btn-submit:hover {
+    background: var(--primary-red);
+    transform: translateY(-3px);
+}
 
-/* Duyuru ve Harita */
+/* 4. Hizmet Bölgeleri */
+.service-areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.service-areas-grid div {
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--light-bg);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.service-areas-grid div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* 5. Alt Bölümler */
 .service-notice {
     text-align: center;
     padding: 40px;
@@ -158,114 +148,76 @@ input, select, textarea {
     overflow: hidden;
 }
 
-/* Mobil Uyumluluk */
+.map-section iframe {
+    width: 100%;
+    border: 0;
+}
+
 /* ============================================================
-   İLETİŞİM SAYFASI MOBİL UYUMLULUK (max-width: 768px)
+   MOBİL UYUMLULUK (Tam Düzeltme)
    ============================================================ */
 
 @media (max-width: 768px) {
-    /* 1. Genel Padding Ayarı */
-    .contact-main {
-        padding: 40px 0;
+    /* Topbar WhatsApp Düzeltme */
+    .top-bar .container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        padding: 0 15px;
     }
-    .contact-container, 
-.contact-wrapper, 
-.contact-main .container { 
-    display: flex !important;
-    flex-direction: column !important; 
-    gap: 20px !important;
-    align-items: center; /* Kartları ortala */
-}
 
-    /* 2. Başlık Boyutu */
+    /* Grid'den Flex'e geçiş (Taşmayı bitirir) */
+    .contact-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px;
+    }
+
+    /* Tüm genişlikleri zorla */
+    .contact-info, .contact-form-card, .contact-main .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 0 15px;
+    }
+
+    /* Sağa fırlayan formu resetle */
+    .contact-form-card {
+        position: relative !important;
+        left: 0 !important;
+        margin-left: 0 !important;
+        padding: 25px 20px !important;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05) !important;
+    }
+
+    /* Başlık ve Kartlar */
     .contact-info {
-        order: 1; /* İlk sırada adres bilgileri */
-    }
-    .contact-info h2 {
-        font-size: 1.8rem;
-        margin-bottom: 15px;
-    }
-
-    /* 3. Bilgi Kartları (Telefon, E-posta, Adres) */
-    .info-card {
-        padding: 15px;
-        gap: 15px;
-        flex-direction: column; /* Mobilde ikon üstte, metin altta */
         text-align: center;
     }
 
-        .info-card i {
-            font-size: 28px;
-        }
-
-        .info-card h4 {
-            margin-bottom: 2px;
-        }
-
-    /* 4. İletişim Formu Kartı */
-    .contact-info, .contact-form-card {
-        width: 100% !important;
-        max-width: 100% !important;
-        /* Alttaki değerler kutuyu merkeze zorlar */
-        position: relative !important; 
-        left: 0 !important;
-        right: 0 !important;
-        transform: none !important; 
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-    .contact-form-card {
-        order: 2;
-        margin-top: 20px; /* Bilgi kartlarından sonra biraz boşluk */
-        padding: 25px 15px; /* İç boşluğu mobilde biraz daralttık */
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Taşma yapmasın diye gölgeyi hafiflettik */
-    }
-    .contact-form-card form {
-        width: 100%;
-        overflow: hidden;
+    .info-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
     }
 
     .form-row {
-        grid-template-columns: 1fr; /* Ad ve Soyad alt alta */
-        gap: 10px;
+        grid-template-columns: 1fr; /* Ad-Soyad alt alta */
     }
 
+    /* Form Zoom Engelleme */
     input, select, textarea {
-        padding: 14px; /* Mobilde dokunma alanı için biraz daha geniş */
-        font-size: 16px; /* Mobilde input odaklandığında zoom yapmasını engeller */
+        font-size: 16px !important;
     }
 
-    .btn-submit {
-        padding: 18px;
-        font-size: 17px;
-    }
-
-    /* 5. Hizmet Bölgeleri Grid Yapısı */
-    .service-areas-grid {
-        grid-template-columns: 1fr; /* Bölgeler tek sütun */
-        padding: 20px 10px !important;
-        gap: 15px;
-    }
-
-        .service-areas-grid div {
-            text-align: center;
-        }
-
-    /* 6. Duyuru Panosu */
-    .service-notice {
-        padding: 25px 15px;
-        margin: 30px 10px;
-        border-left: none;
-        border-top: 5px solid var(--primary-red); /* Mobilde çizgi üste gelsin */
-    }
-
-    /* 7. Harita Alanı */
+    /* Harita Yüksekliği */
     .map-section iframe {
-        height: 300px; /* Mobilde harita yüksekliğini sabitleyelim */
+        height: 300px;
     }
 
+    /* Nav Menü */
     .nav-menu {
-        display: none; /* Veya transform: translateX(100%); */
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -275,23 +227,7 @@ input, select, textarea {
         z-index: 1000;
     }
 
-        /* JavaScript tıklandığında bu sınıfı ekleyecek */
-        .nav-menu.active {
-            display: flex;
-        }
-
-    .menu-toggle {
-        display: block; /* Sadece mobilde görünsün */
-        font-size: 24px;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-
-    /* Masaüstünde butonu gizle */
-    @media (min-width: 769px) {
-        .menu-toggle {
-            display: none;
-        }
+    .nav-menu.active {
+        display: flex;
     }
 }
