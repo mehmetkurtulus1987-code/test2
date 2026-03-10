@@ -168,11 +168,14 @@ input, select, textarea {
     .contact-main {
         padding: 40px 0;
     }
-    .contact-wrapper, .contact-container {
-        display: flex !important;
-        flex-direction: column !important; /* Yan yana duran elemanları alt alta dizer */
-        gap: 30px;
-    }
+    .contact-container, 
+.contact-wrapper, 
+.contact-main .container { 
+    display: flex !important;
+    flex-direction: column !important; 
+    gap: 20px !important;
+    align-items: center; /* Kartları ortala */
+}
 
     /* 2. Başlık Boyutu */
     .contact-info {
@@ -203,11 +206,23 @@ input, select, textarea {
     .contact-info, .contact-form-card {
         width: 100% !important;
         max-width: 100% !important;
+        /* Alttaki değerler kutuyu merkeze zorlar */
+        position: relative !important; 
+        left: 0 !important;
+        right: 0 !important;
+        transform: none !important; 
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
     .contact-form-card {
         order: 2;
-        margin-top: 0;
-        
+        margin-top: 20px; /* Bilgi kartlarından sonra biraz boşluk */
+        padding: 25px 15px; /* İç boşluğu mobilde biraz daralttık */
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Taşma yapmasın diye gölgeyi hafiflettik */
+    }
+    .contact-form-card form {
+        width: 100%;
+        overflow: hidden;
     }
 
     .form-row {
