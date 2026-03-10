@@ -157,13 +157,19 @@
         background: #e74c3c;
         color: #fff;
     }
-.blog-meta {
-    margin-top: 12px;
-    font-size: 12px;
-    color: #888;
+.blog-footer-meta {
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #ddd;
+}
+.blog-meta {
+    display: flex;
+    gap: 10px;
+    font-size: 11px;
+    color: #888;
 }
 
     .blog-meta i {
@@ -287,6 +293,11 @@
     .blog-meta {
         justify-content: center; /* Mobilde tarih ve okuma süresini ortala */
         margin-bottom: 10px;
+    }
+    .blog-footer-meta {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
     }
 
     /* 8. Açılır Detay Alanı Düzenlemesi */
